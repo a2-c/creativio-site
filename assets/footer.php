@@ -1,15 +1,15 @@
 <footer>
     
 
-    <div class="grid grid-2 padding flex-between padding bg-dark-blue t-color-white">
-        <div class="t-color-white">
-            a2-c AG <br>
-            Kammgarn West, 1. Stock<br>
-            Baumgartenstrasse 23<br>
-            8200 Schaffhausen<br>
-            052 533 66 60<br>
-            info@a2-c.ch<br>
-            www.a2-c.ch<br>
+    <div class="grid grid-2 flex-between padding bg-dark-blue t-color-white">
+        <div>
+            <span class="t-color-white">a2-c AG </span><br>
+            <span class="t-color-white">Kammgarn West, 1. Stock</span><br>
+            <span class="t-color-white">Baumgartenstrasse 23</span><br>
+            <span class="t-color-white">8200 Schaffhausen</span><br>
+            <span class="t-color-white">052 533 66 60</span><br>
+            <span class="t-color-white">info@a2-c.ch</span><br>
+            <span class="t-color-white">www.a2-c.ch</span><br>
         </div>
         <div class="t-right">
             <a class="reset-link link-light u-hover" href="index.php">Über uns </a><br>

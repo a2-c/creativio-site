@@ -115,6 +115,10 @@ body::-webkit-scrollbar-thumb {
     color: var(--white)
 }
 
+.t-color-blue {
+    color: var(--dark-blue)
+}
+
 /* Margin */
 .margin-remove {
     margin: 0
