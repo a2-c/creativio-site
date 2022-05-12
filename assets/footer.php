@@ -2,7 +2,7 @@
     
 
     <div class="grid grid-2 padding flex-between padding bg-dark-blue t-color-white">
-        <div>
+        <div class="t-color-white">
             a2-c AG <br>
             Kammgarn West, 1. Stock<br>
             Baumgartenstrasse 23<br>

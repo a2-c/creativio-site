@@ -1,5 +1,7 @@
 <header>
-        <img src="images/logo.svg" style="max-height:28px;width:auto;">
+    <a href="index.php" style="height:24px;width: 80px">
+        <img src="images/logo.svg" >
+    </a>
     <nav>
         <ul>
             <li><a href="index.php" class="u-hover">Über Uns</a></li>

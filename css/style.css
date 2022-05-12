@@ -13,6 +13,7 @@
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    color: var(--dark-grey);
 }
 
 
@@ -21,10 +22,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0
-}
-
-* {
-    color: var(--dark-grey);
 }
 
 main {
@@ -45,20 +42,6 @@ body::-webkit-scrollbar-thumb {
 	padding: 1em;
 }
 
-/* h1 {
-    font-size: 6em;
-    margin-bottom: -32px;
-}
-
-h2 {
-    font-size: 3em;
-}
-
-h3 {
-    font-size: 1.8em;
-} */
-
-
 .heroshot {
     font-size: 2em;
     position: absolute;
@@ -73,22 +56,12 @@ h3 {
 /* GRID */
 
 .grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
 }
 
-.grid-2>* {
-    width: 50%;
+.grid-2 {
+    grid-template-columns: repeat(auto-fill, 50%);
 }
-
-.grid-3>* {
-    width: 33%;
-}
-
-.grid-4>* {
-    width: 25%;
-}
-
 
 
 /* BACKGROUND */
@@ -247,7 +220,7 @@ nav>ul > li > a:hover {
     color: var(--black) !important;
 }
 
-nav>ul:hover > li > a {
+nav>ul:hover > li > a, nav>ul:hover > *{
     color: var(--grey);
 }
 
@@ -306,7 +279,6 @@ nav>ul:hover > li > a {
 
 .team-container {
     display: inline-grid;
-    /* grid-template-columns: 25% 25% 25% 25%; */
     grid-template-columns: repeat(auto-fill, 30%);
     gap: 50px;
     max-width: 100%;
@@ -335,8 +307,8 @@ nav>ul:hover > li > a {
 /* RESPONSIVE */
 @media only screen and (max-width: 900px) {
 
-    .grid-2>* {
-        width: 100%;
+    .grid-2 {
+        grid-template-columns: repeat(auto-fill, 100%);
     }
 
     .grid-3>* {

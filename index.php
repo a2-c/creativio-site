@@ -62,7 +62,7 @@
             <div class="container">
                 <div class="grid grid-2 flex-middle">
                     <div class="flex flex-center" style="justify-content: center">
-                        <iframe width="392" height="220.5" src="https://www.youtube.com/embed/0e3Zko031RE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="430" height="242" src="https://www.youtube.com/embed/0e3Zko031RE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div>
                         <h3 class="bold" style="font-size: 2em; margin-top: 0">Martin Ahrend</h3>
@@ -130,7 +130,6 @@
     <?php include('assets/footer.php') ?>
 
     <script>
-
         $(window).on('resize', function() {
 
 
@@ -166,72 +165,82 @@
                 timeline.css('height', '630px')
             }
         }
-
     </script>
 
     <script>
-       
-                // Homepage Counter Simulation
+        // Homepage Counter Simulation
 
-                var scrollHappend = false;
-                var screenHeight = $(window).height();
-                var legendFrom = $('#numbers').offset().top + 60;
+        var scrollHappend = false;
+        var screenHeight = $(window).height();
+        var legendFrom = $('#numbers').offset().top + 60;
 
-                var myScrollFunc = function () {
-                    animateNumber(0, 147, 100, 1, $('#projekte'), 0);                    
-                    animateNumber(0, 8, 200, 1, $('#angestellte'), 0);                    
-                    animateNumber(0, 17, 200, 1, $('#erfahrung'), 0);
-                    animateNumber(0, 2, 1000, 1, $('#lehrlinge'), 0);
-                };
+        var data = [
+            [$('#projekte'), 147, 1],
+            [$('#angestellte'), 8, 1],
+            [$('#erfahrung'), 17, 1],
+            [$('#lehrlinge'), 2, 1],
+        ];
 
-                $(window).scroll(function(){
 
-                    var y = $(window).scrollTop();
+        var desiredTime = 10000;
 
-                    if (y + screenHeight >= legendFrom) {
-                        if(!scrollHappend) {
-                            myScrollFunc();
-                            scrollHappend = true;
-                        }
-                    }
-                });
+        console.log('fasdf')
 
-                function animateNumber(start, stop, speed, increment, field, flache){
-                    var i = setInterval(function (){
+        var myScrollFunc = function() {
+            data.forEach(element => {
+                console.log(desiredTime / element[1]);
+                var calcTime = desiredTime / element[1];
+                animateNumber(0, element[1], calcTime, 1, element[0], 0);
+            });
 
-                        if (start >= stop){
-                            clearInterval(i);
-                            if(flache > 0){
-                                field.text(commafy(stop) +' m²')
-                            }else {
-                                field.text(commafy(stop))
-                            }
-                        } else {
-                            start += increment;
-                            if(flache > 0){
-                                field.text(commafy(start) +' m²')
-                            }else {
-                                field.text(commafy(start))
-                            }
-                        }
-                    }, speed);
+        };
+
+        $(window).scroll(function() {
+
+            var y = $(window).scrollTop();
+
+            if (y + screenHeight >= legendFrom) {
+                if (!scrollHappend) {
+                    myScrollFunc();
+                    scrollHappend = true;
                 }
+            }
+        });
 
-                function commafy( num )
-                {
-                    var str = num.toString().split('.');
+        function animateNumber(start, stop, speed, increment, field, flache) {
+            var i = setInterval(function() {
 
-                    if (str[0].length >= 4) {
-                        str[0] = str[0].replace(/(\d)(?=(\d{3})+$)/g, '$1\'');
+                if (start >= stop) {
+                    clearInterval(i);
+                    if (flache > 0) {
+                        field.text(commafy(stop) + ' m²')
+                    } else {
+                        field.text(commafy(stop))
                     }
-
-                    if (str[1] && str[1].length >= 4) {
-                        str[1] = str[1].replace(/(\d{3})/g, '$1 ');
+                } else {
+                    start += increment;
+                    if (flache > 0) {
+                        field.text(commafy(start) + ' m²')
+                    } else {
+                        field.text(commafy(start))
                     }
-
-                    return str.join('.');
                 }
-             
+            }, speed);
+        }
+
+        function commafy(num) {
+            var str = num.toString().split('.');
+
+            if (str[0].length >= 4) {
+                str[0] = str[0].replace(/(\d)(?=(\d{3})+$)/g, '$1\'');
+            }
+
+            if (str[1] && str[1].length >= 4) {
+                str[1] = str[1].replace(/(\d{3})/g, '$1 ');
+            }
+
+            return str.join('.');
+        }
     </script>
 
 </body>
