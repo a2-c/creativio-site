@@ -75,26 +75,38 @@
             </div>
         </div>
     </div>
-    <div>
-        <div class="t-wrap t-center" itemscope itemtype="http://schema.org/Person">
-            <div class="uk-card-media-top">
-                <img src="images/team/anouk.png" alt="" class="uk-width-1-1" itemprop="image">
-            </div>
-            <div class="t-center">
-                <h3 class="uk-card-title" itemprop="name">Anouk Eck</h3>
-                <p>Mediamatikerin <br> in Ausbildung</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="padding-y">
+
+    <h3>Lehrlinge</h3>
+    <div class="team-container ">
+        <div>
+            <div class="t-wrap t-center" itemscope itemtype="http://schema.org/Person">
+                <div class="uk-card-media-top">
+                    <img src="images/team/anouk.png" alt="" class="uk-width-1-1" itemprop="image">
+                </div>
+                <div class="t-center">
+                    <h3 class="uk-card-title" itemprop="name">Anouk Eck</h3>
+                    <p>Mediamatikerin <br> in Ausbildung</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div>
-        <div class="t-wrap t-center" itemscope itemtype="http://schema.org/Person">
-            <div class="uk-card-media-top">
-                <img src="images/team/maxim.jpg" alt="" class="uk-width-1-1" itemprop="image">
-            </div>
-            <div class="t-center">
-                <h3 class="uk-card-title" itemprop="name">Maxim Mäder</h3>
-                <p>Mediamatiker <br> in Ausbildung</p>
+        <div>
+            <div class="t-wrap t-center" itemscope itemtype="http://schema.org/Person">
+                <div class="uk-card-media-top">
+                    <img src="images/team/maxim.jpg" alt="" class="uk-width-1-1" itemprop="image">
+                </div>
+                <div class="t-center">
+                    <h3 class="uk-card-title" itemprop="name">Maxim Mäder</h3>
+                    <p>Mediamatiker <br> in Ausbildung</p>
+                </div>
             </div>
         </div>
+    
     </div>
 </div>

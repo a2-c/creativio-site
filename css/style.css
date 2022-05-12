@@ -147,7 +147,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .padding-remove {
-    padding: 0
+    padding: 0 !important
 }
 
 
@@ -283,8 +283,8 @@ nav>ul:hover > li > a, nav>ul:hover > *{
 
 .team-container {
     display: inline-grid;
-    grid-template-columns: repeat(auto-fill, 30%);
-    gap: 50px;
+    grid-template-columns: repeat(auto-fill, 25%);
+    gap: 70px;
     max-width: 100%;
     width: 100%;
 }
@@ -349,3 +349,23 @@ nav>ul:hover > li > a, nav>ul:hover > *{
     background-color: var(--dark-blue);
     color: var(--white);
 }
+
+
+
+
+.hover-box {
+    width: 300px;
+    background-color: var(--grey);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    display: none;
+    box-shadow: 0 0 10px white;
+    border-radius: 15px;
+}
+
+.hover-box h2 {margin-top: 0}
+.hover-box > *:last-child {margin-bottom: 0}
+
+.hover-box img {max-width: 100%; border-radius: 15px;}

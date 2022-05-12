@@ -182,7 +182,7 @@
         ];
 
 
-        var desiredTime = 10000;
+        var desiredTime = 3000;
 
         console.log('fasdf')
 
