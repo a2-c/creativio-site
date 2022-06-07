@@ -11,6 +11,18 @@
     --black: #000000;
 }
 
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --light-blue: #d2ebff;
+        --dark-blue: #0060ae;
+        --white: #171717;
+        --grey: #424242;
+        --dark-grey: #1f1f1f;
+        --dark-grey-font: #a0a0a0;
+        --black: #000000;
+    }
+  } */
+
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -22,7 +34,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0
+    margin: 0;
+    background-color: var(--white)
 }
 
 main {
@@ -109,6 +122,9 @@ h3 {
 
 .bg-black {
     background-color: var(--black)
+}
+.bg-dark-grey {
+    background-color: var(--dark-grey)
 }
 
 
@@ -264,13 +280,13 @@ nav>ul li a * {
 }
 
 nav>ul > li > a:hover *, nav>ul > li > a:hover {
-    color: var(--black) !important;
-    fill: var(--black) !important;
+    color: var(--dark-grey-font) !important;
+    fill: var(--dark-grey-font) !important;
 }
 
 nav>ul:hover > li > a, nav>ul:hover > * *, nav>ul:hover > li > a, nav>ul:hover > *{
-    color: rgb(193, 193, 193);
-    fill: rgb(193, 193, 193);
+    color: var(--grey);
+    fill: var(--grey);
 }
 
 /* FORM */
@@ -312,7 +328,7 @@ nav>ul:hover > li > a, nav>ul:hover > * *, nav>ul:hover > li > a, nav>ul:hover >
 }
 
 .dropdown:hover>ul>li {
-    background-color: var(--grey);
+    background-color: var(--black);
     margin-bottom: 0.5em;
     padding: 0.5em;
 }
@@ -346,6 +362,19 @@ nav>ul:hover > li > a, nav>ul:hover > * *, nav>ul:hover > li > a, nav>ul:hover >
     margin:0;
 }
 
+
+.outline-proj {
+    border: 3px solid #eaeaea;
+    position: relative;
+}
+.outline-proj h2 {
+    position: absolute;
+    margin: 0;
+    left: 30px;
+    top: -32px;
+    background-color: var(--white);
+    padding: 0.5em
+}
 
 
 .detail {

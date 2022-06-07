@@ -3,7 +3,7 @@
 <div class="uk-section">
 	
 	<div class="uk-container">
-		<div class="timeline uk-padding-small">
+		<div class="timeline uk-padding-small bg-black">
 			
 			<div class="uk-padding-small first uk-text-center">
 				<div class="uk-margin-medium-bottom">
