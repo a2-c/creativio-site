@@ -23,7 +23,7 @@
 
                 <h1>Lehre</h1>
 
-                <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 3401.6 3401.6" style="enable-background:new 0 0 3401.6 3401.6;" xml:space="preserve">
+                <!-- <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 3401.6 3401.6" style="enable-background:new 0 0 3401.6 3401.6;" xml:space="preserve">
                     <style type="text/css">
                         .st0, .st1 {
                             fill: rgba(0,0,0,0);
@@ -32,13 +32,13 @@
                             stroke-miterlimit: 10;
                         }
 
-                        <!-- rect:hover {
+                        rect:hover {
                             fill: #f2f2f2;
-                        } -->
+                        }
                     </style>
                     <rect class="st0" width="1913.4" height="3401.6" title="KV" text="lorem kfjasdlkfj dflkasj dflakjsdfkjasldkfja sdfjlkas dlkfjasldkfjalk sjdflkajsdfkaf f asldkf jalksd flkas df adsf a dsf" imgpath="images\Aus- und Weiterbildung.jpg" />
                     <rect x="1913.4" class="st1" width="1488.2" height="3401.6" title="Informatik" text="lorem kfjasdlkfj dflkasj dflakjsdfkjasldkfja sdfjlkas dlkfjasldkfjalk sjdflkajsdfkaf f asldkf jalksd flkas df adsf a dsf" imgpath="images/heroshot.jpg" />
-                </svg>
+                </svg> -->
             </div>
 
         </div>
@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <div class="bg-grey margin-y padding-y">
+        <div class="bg-grey padding-y">
             <div class="container">
                 <div>
                     <div>

@@ -5,7 +5,7 @@
 
             <div class="t-center team-body">
                 <h3 class="team-name" itemprop="name">Martin Ahrend</h3>
-                <p class="team-title" itemprop="jobTitle">Ceo</p>
+               <p class="team-title"  itemprop="jobTitle">Ceo</p>
             </div>
         </div>
     </div>
@@ -31,6 +31,8 @@
             </div>
         </div>
     </div>
+    </div>
+    <div class="team-container">
     <div>
         <div class="t-wrap t-center" itemscope itemtype="http://schema.org/Person">
             <div class="uk-card-media-top">
@@ -64,6 +66,8 @@
             </div>
         </div>
     </div>
+    </div>
+    <div class="team-container">
     <div>
         <div class="t-wrap t-center" itemscope itemtype="http://schema.org/Person">
             <div class="uk-card-media-top">
@@ -76,9 +80,6 @@
         </div>
     </div>
 </div>
-<br>
-<br>
-<br>
 <br>
 <br>
 <div class="padding-y">

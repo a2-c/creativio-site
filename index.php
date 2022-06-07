@@ -17,9 +17,11 @@
         <div style="position: relative">
             <img src="https://www.kammgarn-west.ch/wp-content/uploads/2019/04/eingangsbereich_dsc2946-2100x900-c-default.jpg" alt="" style="width: 100%">
 
-            <div class="t-color-grey heroshot">
-                <h1 class="bold">a2-c</h1>
-                <h3>Vom ersten Gedankensplitter <br> bis zur fertigen Lösung</h3>
+            <div class="container-parent">
+                <div class="t-color-grey heroshot container">
+                    <h1 class="bold">a2-c</h1>
+                    <h3>Vom ersten Gedankensplitter <br> bis zur fertigen Lösung</h3>
+                </div>
             </div>
         </div>
 
@@ -30,7 +32,7 @@
                 <div class="grid grid-2 flex-middle padding-y">
 
                     <div class="">
-                        <p class="ideenschmiede">Wir verstehen uns als <span class="t-color-black">Ideenschmiede</span> für individuelle Lösungen in den Bereichen ...</p>
+                        <p class="ideenschmiede">Wir verstehen uns als <span class="t-color-blue">Ideenschmiede</span> für individuelle Lösungen in den Bereichen ...</p>
                     </div>
 
                     <div>
