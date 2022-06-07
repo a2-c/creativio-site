@@ -4,6 +4,10 @@
 <head>
     <?php include('assets/head.php') ?>
 
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit-icons.min.js"></script>
+
     <title>Lehre</title>
 </head>
 
@@ -90,12 +94,11 @@
             $('.hover-box').css('display', 'unset');
 
             $('.hover-box').html(
-                '<h2>'+this.getAttribute('title')+'</h2>'+
+                '<div><h2>'+this.getAttribute('title')+'</h2>'+
+                '<span uk-icon="close" onclick="$(\'.hover-box\').css(\'display\', \'none\');"></span></div>'+
                 '<p>'+this.getAttribute('text')+'</p>'+
                 '<img src="'+this.getAttribute('imgpath')+'" alt="fasdfasd">'
             );
-
-            console.log()
         }
     </script>
 

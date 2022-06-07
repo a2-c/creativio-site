@@ -5,15 +5,16 @@
     --light-blue: #d2ebff;
     --dark-blue: #003057;
     --white: #ffffff;
-    --grey: #e6e6e6;
+    --grey: #eaeaea;
     --dark-grey: #1f1f1f;
+    --dark-grey-font: #5e5e5e;
     --black: #000000;
 }
 
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    color: var(--dark-grey);
+    color: var(--dark-grey-font);
 }
 
 
@@ -38,7 +39,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: var(--dark-blue);
+	background-color: rgb(189, 189, 189);
 	padding: 1em;
 }
 
@@ -49,9 +50,38 @@ body::-webkit-scrollbar-thumb {
     left: 100px;
 }
 
+.smallsvg {
+    height: 15px;
+}
 
 
 
+.abbschnitt-titel {
+    font-size: 40px;
+    margin-bottom: 1.5em; 
+}
+
+h3 {
+    font-size: 27px;
+}
+
+.team-name {
+    font-size: 27px;
+    margin-bottom: 0.1em;
+    margin-top: 0.9em;
+}
+.team-title {
+    margin-bottom: 1.3em;
+    margin-top: 0.1em;
+}
+
+.ideenschmiede {
+    font-size: 30px;
+}
+.ideenschmiedeklein {
+    font-size: 20px;
+    word-wrap: break-word;
+}
 
 /* GRID */
 
@@ -115,8 +145,16 @@ body::-webkit-scrollbar-thumb {
     color: var(--white)
 }
 
+.t-color-black {
+    color: var(--black)
+}
+
 .t-color-blue {
     color: var(--dark-blue)
+}
+
+.t-color-light-blue {
+    color: var(--light-blue)
 }
 
 /* Margin */
@@ -220,12 +258,19 @@ nav>ul li a {
     padding: 0 1em;
     transition: color 0.2s ease;
 }
-nav>ul > li > a:hover {
-    color: var(--black) !important;
+
+nav>ul li a * {
+    transition: color 0.2s ease;
 }
 
-nav>ul:hover > li > a, nav>ul:hover > *{
-    color: var(--grey);
+nav>ul > li > a:hover *, nav>ul > li > a:hover {
+    color: var(--black) !important;
+    fill: var(--black) !important;
+}
+
+nav>ul:hover > li > a, nav>ul:hover > * *, nav>ul:hover > li > a, nav>ul:hover > *{
+    color: rgb(193, 193, 193);
+    fill: rgb(193, 193, 193);
 }
 
 /* FORM */
@@ -300,7 +345,7 @@ nav>ul:hover > li > a, nav>ul:hover > *{
 
 
 .lehre-blob {
-    background-color: var(--dark-grey);
+/*     background-color: var(--dark-grey); */
     height: 100vh;
 }
 .lehre-blob h1  {
@@ -324,7 +369,7 @@ nav>ul:hover > li > a, nav>ul:hover > *{
     }
 
     .team-container {
-        grid-template-columns: 50% 50% !important;
+        grid-template-columns: 100% !important;
         gap: 10px
     }
 
@@ -365,7 +410,8 @@ nav>ul:hover > li > a, nav>ul:hover > *{
     border-radius: 15px;
 }
 
-.hover-box h2 {margin-top: 0}
+.hover-box h2 {margin-top: 0; display: inline}
 .hover-box > *:last-child {margin-bottom: 0}
-
+.hover-box div {display: flex;justify-content: space-between;}
+.hover-box span {cursor: pointer;}
 .hover-box img {max-width: 100%; border-radius: 15px;}

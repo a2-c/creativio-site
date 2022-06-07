@@ -10,5 +10,3 @@
 <link rel="apple-touch-icon" href="images/fav-icon.svg">
 <link rel="apple-touch-icon-precomposed" href="images/fav-icon.svg">
 <link rel="icon" href="images/fav-icon.svg">
-
-<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>

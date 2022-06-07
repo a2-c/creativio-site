@@ -26,30 +26,30 @@
         <!-- Unsere Drei Hauptbereiche -->
         <div class="container-parent">
             <div class="container">
-                <h2>Über Uns</h2>
-                <div class="grid grid-2 flex-middle">
+                <!-- <h2 class="abbschnitt-titel">Über Uns</h2> -->
+                <div class="grid grid-2 flex-middle padding-y">
 
-                    <div>
-                        <p>Wir verstehen uns als Ideenschmiede für individuelle Lösungen in den Bereichen:</p>
+                    <div class="">
+                        <p class="ideenschmiede">Wir verstehen uns als <span class="t-color-black">Ideenschmiede</span> für individuelle Lösungen in den Bereichen ...</p>
                     </div>
 
                     <div>
-                        <div class="t-center">
-                            <a href="" class="reset-link u-hover">
+                        <div class="t-center margin-y">
+                            <a href="" class="reset-link">
                                 <img src="images/Innovative Webapplikationen.png" alt="Innovative Webapplikationen" style="width: 30%">
-                                <p>Innovative Webapplikationen</p>
+                                <p class="ideenschmiedeklein">Innovative Webapplikationen</p>
                             </a>
                         </div>
-                        <div class="t-center">
-                            <a href="" class="reset-link u-hover">
+                        <div class="t-center margin-y">
+                            <a href="" class="reset-link">
                                 <img src="images/Aus- und Weiterbildung.jpg" alt="Innovative Webapplikationen" style="width: 30%">
-                                <p>Aus - und Weiterbildung</p>
+                                <p class="ideenschmiedeklein">Aus - und Weiterbildung</p>
                             </a>
                         </div>
-                        <div class="t-center">
-                            <a href="" class="reset-link u-hover">
+                        <div class="t-center margin-y">
+                            <a href="" class="reset-link">
                                 <img src="images/Projektmanagement.jpg" alt="Innovative Webapplikationen" style="width: 30%">
-                                <p>Projektmanagement</p>
+                                <p class="ideenschmiedeklein">Projektmanagement</p>
                             </a>
                         </div>
                     </div>
@@ -65,8 +65,8 @@
                         <iframe width="430" height="242" src="https://www.youtube.com/embed/0e3Zko031RE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div>
-                        <h3 class="bold" style="font-size: 2em; margin-top: 0">Martin Ahrend</h3>
-                        <p>a2-c AG CEO</p>
+                        <h2 class="team-name">Martin Ahrend</h2>
+                        <p class="team-title">a2-c AG CEO</p>
 
                         <div class="grid-2 grid">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequatur quis qui amet quibusdam vero nisi.</p>
@@ -81,7 +81,7 @@
         <div class="margin-y padding-y">
             <div class="container">
 
-                <h2>Unser Team</h2>
+                <h2 class="abbschnitt-titel">Unser Team</h2>
                 <p>Unser Team setzt sich aus den Bereichen bla bal bla, bla bla und bla bla zusammen und wir verstehen uns miteinander genau so gut wie mit der Technik. Dies ist seit Jahren ein Erfolgsrezept für eine Angenehme und wirkungsvolle zusammenarbeit. Wir Freuen uns immer darauf neue Mitarbeiter zu begrüssen.</p>
 
                 <?php include('assets/team.php') ?>
@@ -94,7 +94,7 @@
 
                 <!-- <p class="t-color-red">INCLUDE JS FROM OLDE SITE</p> -->
 
-                <h2>Unser Weg</h2>
+                <h2 class="abbschnitt-titel">Unser Weg</h2>
 
                 <?php include('assets/timeline.php') ?>
 
@@ -104,7 +104,7 @@
         <div class="margin-y padding-y" id="numbers">
             <div class="container">
 
-                <h2>Unser Erfolg in Zahlen</h2>
+                <h2 class="abbschnitt-titel">Unser Erfolg in Zahlen</h2>
 
                 <div class="grid grid-2 t-large">
                     <div>
@@ -180,7 +180,6 @@
             [$('#erfahrung'), 17, 1],
             [$('#lehrlinge'), 2, 1],
         ];
-
 
         var desiredTime = 3000;
 
