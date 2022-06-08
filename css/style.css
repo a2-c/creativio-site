@@ -111,6 +111,9 @@ h3 {
 .bg-grey {
     background-color: var(--grey)
 }
+.bg-white {
+    background-color: var(--white)
+}
 
 .bg-dark-blue {
     background-color: var(--dark-blue)
@@ -463,9 +466,10 @@ nav>ul:hover > li > a, nav>ul:hover > * *, nav>ul:hover > li > a, nav>ul:hover >
     display: none;
     box-shadow: 0 0 10px white;
     border-radius: 15px;
+    pointer-events: none;
 }
 
-.hover-box h2 {margin-top: 0; display: inline}
+.hover-box h2 {margin-top: 0; display: inline; margin-bottom: 0;}
 .hover-box > *:last-child {margin-bottom: 0}
 .hover-box div {display: flex;justify-content: space-between;}
 .hover-box span {cursor: pointer;}

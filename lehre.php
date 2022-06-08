@@ -8,6 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit-icons.min.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
     <title>Lehre</title>
 </head>
 
@@ -18,27 +20,13 @@
     <main>
 
         <!-- Hero Shot -->
-        <div class="lehre-blob">
-            <div class="container">
+        <div class="lehre-blob" id="lehre-blob">
+            <div class="container" style="padding-top: 0">
 
-                <h1>Lehre</h1>
+                <!--                 <h1>Lehre</h1>
+                <p>Wir bieten alle zwei Jahre eine vier jährige Mediamatiker Ausbildung an.</p> -->
 
-                <!-- <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 3401.6 3401.6" style="enable-background:new 0 0 3401.6 3401.6;" xml:space="preserve">
-                    <style type="text/css">
-                        .st0, .st1 {
-                            fill: rgba(0,0,0,0);
-                            stroke: #000000;
-                            stroke-width: 1.0038;
-                            stroke-miterlimit: 10;
-                        }
-
-                        rect:hover {
-                            fill: #f2f2f2;
-                        }
-                    </style>
-                    <rect class="st0" width="1913.4" height="3401.6" title="KV" text="lorem kfjasdlkfj dflkasj dflakjsdfkjasldkfja sdfjlkas dlkfjasldkfjalk sjdflkajsdfkaf f asldkf jalksd flkas df adsf a dsf" imgpath="images\Aus- und Weiterbildung.jpg" />
-                    <rect x="1913.4" class="st1" width="1488.2" height="3401.6" title="Informatik" text="lorem kfjasdlkfj dflkasj dflakjsdfkjasldkfja sdfjlkas dlkfjasldkfjalk sjdflkajsdfkaf f asldkf jalksd flkas df adsf a dsf" imgpath="images/heroshot.jpg" />
-                </svg> -->
+                <?php include('images/test2.svg') ?>
             </div>
 
         </div>
@@ -84,22 +72,67 @@
     <script>
         var rects = document.querySelectorAll('rect');
         for (var rect of rects) {
-            rect.addEventListener('click', cb);
+            rect.addEventListener('mouseover', active);
+            rect.addEventListener('mouseout', inactive);
+        }
+        var rects = document.querySelectorAll('polygon');
+        for (var rect of rects) {
+            rect.addEventListener('mouseover', active);
+            rect.addEventListener('mouseout', inactive);
         }
 
-        function cb() {
-            $('.hover-box').css('top', event.clientY);
-            $('.hover-box').css('left', event.clientX - $('.hover-box').width() / 2);
+        $('.hover-box').css('display', 'unset');
 
-            $('.hover-box').css('display', 'unset');
+        var currentrect = '';
+
+        var infos = {
+            'house': {
+                'title': 'Himmel',
+                'text': 'Das ist der himmel ... ',
+                'imgpath': 'https://a2-c.ch/img/web-development.jpg',
+            },
+            'grass': {
+                'title': 'Boden',
+                'text': 'Das ist der Boden',
+                'imgpath': 'https://a2-c.ch/img/elearning_statistik.png',
+            }
+        }
+
+        function active(name) {
+            console.log(this)
+
+            currentrect = this
+        }
+
+        function inactive(name) {
+            currentrect = ''
+        }
+
+        $("#lehre-blob").mousemove(function(event) {
+            
+            if (currentrect == '') {
+                $('.hover-box').css('display', 'none');
+                return
+            }
+            else{
+                $('.hover-box').css('display', 'unset');
+            }
+
+            var cInof = infos[currentrect.getAttribute('id')]
+
+            $('.hover-box').css('top', event.pageY + 30);
+            $('.hover-box').css('left', event.pageX - $('.hover-box').width() / 2);
 
             $('.hover-box').html(
-                '<div><h2>'+this.getAttribute('title')+'</h2>'+
-                '<span uk-icon="close" onclick="$(\'.hover-box\').css(\'display\', \'none\');"></span></div>'+
-                '<p>'+this.getAttribute('text')+'</p>'+
-                '<img src="'+this.getAttribute('imgpath')+'" alt="fasdfasd">'
-            );
-        }
+                '<div><h2>' + cInof['title'] + '</h2>' +
+                '</div>' + 
+                '<p>' + cInof['text'] + '</p>' +
+                '<img src="' + cInof['imgpath'] + '" alt="fasdfasd">'
+                );
+        });
+
+        /* <img src="' + cInof['imgpath'] + '" alt="fasdfasd"> */
+        /* <span uk-icon="close" onclick="$(\'.hover-box\').css(\'display\', \'none\');"></span> */
     </script>
 
 </body>

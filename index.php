@@ -119,7 +119,10 @@
                         <p><span class="bold" id="projekte" style="font-size: 2em;">0</span> Erfolgreiche Projekte</p>
                     </div>
                     <div>
-                        <p><span class="bold" id="lehrlinge" style="font-size: 2em;">0</span> Lehrlinge</p>
+                        <p><span class="bold" id="lehrlinge" style="font-size: 2em;">0</span> Lehrlinge ausgebildet</p>
+                    </div>
+                    <div>
+                        <p><span class="bold" id="lehrlinge" style="font-size: 2em;">52</span> Glückliche Kunden</p>
                     </div>
                 </div>
 
@@ -180,7 +183,7 @@
             [$('#projekte'), 147, 1],
             [$('#angestellte'), 8, 1],
             [$('#erfahrung'), 17, 1],
-            [$('#lehrlinge'), 2, 1],
+            [$('#lehrlinge'), 9, 1],
         ];
 
         var desiredTime = 3000;
