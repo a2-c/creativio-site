@@ -1,7 +1,8 @@
 
 
 <div class="uk-section">
-	
+	<link rel="stylesheet" href="timeline.css">
+	<link rel="stylesheet" href="../css/style.css">
 	<div class="uk-container">
 		<div class="timeline uk-padding-small bg-white">
 			

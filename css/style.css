@@ -105,6 +105,9 @@ h3 {
 .grid-2 {
     grid-template-columns: repeat(auto-fill, 50%);
 }
+.grid-3 {
+    grid-template-columns: repeat(auto-fill, 33%);
+}
 
 
 /* BACKGROUND */
@@ -154,6 +157,9 @@ h3 {
 
 .t-large {
     font-size: xx-large;
+}
+.t-small {
+    font-size: small;
 }
 
 .t-color-red {
@@ -213,7 +219,7 @@ h3 {
     margin-left: auto;
     margin-right: auto;
 
-    padding: 2em
+    padding:  2em 0
 }
 
 
@@ -260,7 +266,7 @@ header {
     justify-content: space-between;
     background-color: var(--white);
     /* border-bottom: 1px solid black; */
-    padding: 0.3em 1em;
+    padding: 0.3em 0em;
     position: sticky;
     top: 0;
     width: 100%;

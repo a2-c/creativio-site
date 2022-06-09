@@ -125,6 +125,11 @@
                         <p><span class="bold" id="lehrlinge" style="font-size: 2em;">52</span> Glückliche Kunden</p>
                     </div>
                 </div>
+                <div class="t-large t-center">
+                    <div>
+                        <p><span class="bold" id="lehrlinge" style="font-size: 2em;">194'000'000</span> Glückliche Kunden</p>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -180,7 +185,7 @@
         var legendFrom = $('#numbers').offset().top + 60;
 
         var data = [
-            [$('#projekte'), 147, 1],
+            [$('#projekte'), 195, 1],
             [$('#angestellte'), 8, 1],
             [$('#erfahrung'), 17, 1],
             [$('#lehrlinge'), 9, 1],

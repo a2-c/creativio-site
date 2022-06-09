@@ -31,15 +31,14 @@
 
         </div>
 
-        <div class="margin-y padding-y">
+        <div class="margin-y padding-y bg-grey ">
             <div class="container">
                 <h2>Ausbildungsplatz: Mediamatiker</h2>
                 <p>Zurzeit haben wir keine offenen Ausbildungsplätze als Mediamatiker.</p>
                 <p>Seit nun mehr als 15 Jahren, können junge Menschen bei der a2-c AG eine Lehre als Mediamatiker anstreben. Die vierjährige Lehre bringt gemeinsam mit der Maturität einen guten Start ins Berufsleben und viele Möglichkeiten für deinen weiterführenden Weg. Vom Webentwickler bis zum Marketingmanager stehen dir nach der Lehre alle Türen offen. Als Allrounder wird man Sich viele Fähigkeiten in den Bereichen Administration, Buchhaltung, Marketing und Informatik aneignen. Wenn du dich also für das Aufbereiten von Informationen und das Mitwirken an komplexen Projekten interessierst, dann bist du bei uns genau richtig!</p>
             </div>
         </div>
-
-        <div class="bg-grey padding-y">
+        <div class="padding-y">
             <div class="container">
                 <div>
                     <div>
@@ -54,6 +53,19 @@
                             <li>Kommunikationsfähigkeit</li>
                             <li>Konzentrationsfähigkeit</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-grey padding-y">
+            <div class="container">
+                <div>
+                    <div>
+                        <h3>Schnupperlehre</h3>
+                        <p>Falls du mal einen Einblick in den Beruf des Mediamatikers haben willst kannst du uns unter Kontakt mit deinem Anliegen erreichen.</p>
+                        <p>Weitere Infos zu Beruf des Mediamatikers</p>
+                        <a href="https://biz-sh.ch/?rubrik=biz_detail&lang=1&SWISSDOK_NR_AD=0561130" target="_blank">BIZ Schaffhausen</a><br>
+                        <a href="https://www.berufsberatung.ch/dyn/show/1900?lang=de&idx=30&id=4034" target="_blank">Berufsberatung</a>
                     </div>
                 </div>
             </div>
