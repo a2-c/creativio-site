@@ -13,24 +13,104 @@
     <title>Lehre</title>
 </head>
 
-<body>
+<body id="all">
     <?php include('assets/header.php') ?>
 
     <style>
 
-        </style>
+    </style>
 
-        <div class="lehre-player">
-            <div class="lehre-player-title">
-                Lofi Track - Hello
-            </div>
-
-            <div class="lehre-player-controls">
-                <div><-</div>
-                <div>-</div>
-                <div>-></div>
-            </div>
+    <div class="lehre-player">
+        <div class="lehre-player-title">
+            <div id="song-title">Song Title</div>
+            <!-- <div>0 / 2:30</div> -->
         </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
+        <script>
+            var started = false;
+            var sound;
+
+            var title = document.getElementById('song-title');
+            
+
+
+            const songPlaylist = [
+                ['Toto - Africa', 'africa.mp3'],
+                ['Dion - Wanderer', 'wanderer.mp3'],
+            ];
+
+            currentSongIndex = 0;
+
+            title.innerHTML = songPlaylist[currentSongIndex][0]
+            songpath = "files/audio/"+songPlaylist[currentSongIndex][1]
+
+            sound = new Howl({
+                src: [songpath],
+                volume: 1.0,
+            });
+
+            
+
+
+            function nextSong(dir="right") {
+                var button = document.getElementById('pausebutton');
+                
+                if (dir == "right") {
+                    currentSongIndex = currentSongIndex + 1
+                }
+                else {
+                    currentSongIndex = currentSongIndex - 1
+                }
+
+                if (currentSongIndex > songPlaylist.length - 1) {
+                    currentSongIndex = 0
+                }
+                if (currentSongIndex == -1) {
+                    currentSongIndex = songPlaylist.length - 1
+                }
+
+                console.log(currentSongIndex)
+                console.log(songPlaylist[currentSongIndex])
+
+                sound.pause()
+                button.setAttribute('state', 'playing')
+                button.innerHTML = 'Playing'
+
+                title.innerHTML = songPlaylist[currentSongIndex][0]
+                songpath = "files/audio/"+songPlaylist[currentSongIndex][1]
+
+                sound = new Howl({
+                    src: [songpath],
+                    volume: 1.0,
+                });
+                sound.play()
+            }
+
+            function togglePause() {
+                var button = document.getElementById('pausebutton');
+
+                console.log(button.getAttribute('state'))
+
+                if (button.getAttribute('state') == 'paused') {
+                    button.setAttribute('state', 'playing')
+                    button.innerHTML = 'Playing'
+                    sound.play()
+                }
+                else {
+                    button.setAttribute('state', 'paused')
+                    button.innerHTML = 'Paused'    
+                    sound.pause()
+                }
+            }
+        </script>
+
+        <div class="lehre-player-controls">
+            <button onclick="nextSong('left')">←</button>
+            <button id="pausebutton" onclick="togglePause()" state="paused">Paused</button>
+            <button onclick="nextSong()">→</button>
+        </div>
+    </div>
 
     <main>
 
@@ -177,11 +257,10 @@
 
             var cInof = infos[currentrect.getAttribute('id')]
 
-            if (screen.height/2 < event.clientY) {
+            if (screen.height / 2 < event.clientY) {
                 $('.hover-box').css('top', 'unset');
                 $('.hover-box').css('bottom', screen.height - event.pageY - 30);
-            }
-            else {
+            } else {
                 $('.hover-box').css('bottom', 'unset');
                 $('.hover-box').css('top', event.pageY + 30);
             }
@@ -196,12 +275,11 @@
                     '<p>' + cInof['text'] + '</p>' +
                     '<img src="' + cInof['imgpath'] + '" alt="fasdfasd">'
                 );
-            }
-            else {
+            } else {
                 $('.hover-box').html(
                     '<div><h2>' + cInof['title'] + '</h2>' +
                     '</div>' +
-                    '<p>' + cInof['text'] + '</p>'  
+                    '<p>' + cInof['text'] + '</p>'
                 );
             }
         });
