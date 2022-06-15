@@ -12,13 +12,10 @@
 
 
     <main>
-
         <!-- Hero Shot -->
-        <div style="position: relative">
-            <img src="https://www.kammgarn-west.ch/wp-content/uploads/2019/04/eingangsbereich_dsc2946-2100x900-c-default.jpg" alt="" style="width: 100%">
-
-            <div class="container-parent">
-                <div class="t-color-grey heroshot container">
+        <div>
+            <div class="container-parent bild">
+                <div class="t-color-grey container heroshot">
                     <h1 class="bold">a2-c</h1>
                     <h3>Vom ersten Gedankensplitter <br> bis zur fertigen Lösung</h3>
                 </div>
@@ -110,25 +107,20 @@
 
                 <div class="grid grid-2 t-large">
                     <div>
-                        <p><span class="bold" id="angestellte" style="font-size: 2em;">0</span> Angestelle</p>
+                        <p><span class="bold t-color-black" id="angestellte" style="font-size: 2em; margin-right: 0.5em">0</span> Angestelle</p>
                     </div>
                     <div>
-                        <p><span class="bold" id="erfahrung" style="font-size: 2em;">0</span> Jahre Erfahrung</p>
+                        <p><span class="bold t-color-black" id="erfahrung" style="font-size: 2em; margin-right: 0.5em">0</span> Jahre Erfahrung</p>
                     </div>
                     <div>
-                        <p><span class="bold" id="projekte" style="font-size: 2em;">0</span> Erfolgreiche Projekte</p>
+                        <p><span class="bold t-color-black" id="projekte" style="font-size: 2em; margin-right: 0.5em">0</span> Erfolgreiche Projekte</p>
                     </div>
                     <div>
-                        <p><span class="bold" id="lehrlinge" style="font-size: 2em;">0</span> Lehrlinge ausgebildet</p>
+                        <p><span class="bold t-color-black" id="lehrlinge" style="font-size: 2em; margin-right: 0.5em">0</span> Lehrlinge ausgebildet</p>
                     </div>
-                    <div>
-                        <p><span class="bold" id="lehrlinge" style="font-size: 2em;">52</span> Glückliche Kunden</p>
-                    </div>
-                </div>
-                <div class="t-large t-center">
-                    <div>
-                        <p><span class="bold" id="lehrlinge" style="font-size: 2em;">194'000'000</span> Glückliche Kunden</p>
-                    </div>
+<!--                     <div>
+                        <p><span class="bold t-color-black" id="lehrlinge" style="font-size: 2em;">52</span> Glückliche Kunden</p>
+                    </div> -->
                 </div>
 
             </div>

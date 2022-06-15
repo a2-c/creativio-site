@@ -16,22 +16,36 @@
 <body>
     <?php include('assets/header.php') ?>
 
+    <style>
+
+        </style>
+
+        <div class="lehre-player">
+            <div class="lehre-player-title">
+                Lofi Track - Hello
+            </div>
+
+            <div class="lehre-player-controls">
+                <div><-</div>
+                <div>-</div>
+                <div>-></div>
+            </div>
+        </div>
 
     <main>
 
         <!-- Hero Shot -->
         <div class="lehre-blob" id="lehre-blob">
-            <div class="container" style="padding-top: 0">
-
+            <div class="" style="height: 100%; padding: 0; text-align: center;">
                 <!--                 <h1>Lehre</h1>
                 <p>Wir bieten alle zwei Jahre eine vier jährige Mediamatiker Ausbildung an.</p> -->
 
-                <?php include('images/test2.svg') ?>
+                <?php include('images/lehreblobv2.svg') ?>
             </div>
 
         </div>
 
-        <div class="margin-y padding-y bg-grey ">
+        <div class="padding-y bg-grey ">
             <div class="container">
                 <h2>Ausbildungsplatz: Mediamatiker</h2>
                 <p>Zurzeit haben wir keine offenen Ausbildungsplätze als Mediamatiker.</p>
@@ -77,6 +91,8 @@
             <img src="images/heroshot.JPG" alt="fasdfasd">
         </div>
 
+
+
     </main>
 
     <?php include('assets/footer.php') ?>
@@ -92,22 +108,52 @@
             rect.addEventListener('mouseover', active);
             rect.addEventListener('mouseout', inactive);
         }
+        var rects = document.querySelectorAll('circle');
+        for (var rect of rects) {
+            rect.addEventListener('mouseover', active);
+            rect.addEventListener('mouseout', inactive);
+        }
+        var rects = document.querySelectorAll('path');
+        for (var rect of rects) {
+            rect.addEventListener('mouseover', active);
+            rect.addEventListener('mouseout', inactive);
+        }
 
-        $('.hover-box').css('display', 'unset');
+        $('.hover-box').css('display', 'none');
 
         var currentrect = '';
 
         var infos = {
-            'house': {
-                'title': 'Himmel',
-                'text': 'Das ist der himmel ... ',
-                'imgpath': 'https://a2-c.ch/img/web-development.jpg',
+            'uhr': {
+                'title': 'Zeit',
+                'text': 'Die Lehre dauert vier Jahre wobei man zwei Tage der Woche in der Schule ist. Man arbeitet am Tag 8,4 Stunden.',
+                'imgpath': '',
             },
-            'grass': {
-                'title': 'Boden',
+            'kv': {
+                'title': 'Kaufmann',
                 'text': 'Das ist der Boden',
-                'imgpath': 'https://a2-c.ch/img/elearning_statistik.png',
-            }
+                'imgpath': '',
+            },
+            'pflanze': {
+                'title': 'Haushalt',
+                'text': 'Im Büro dürfen wir auch kleinere Aufgaben erledigen wie den Einkauf, das Pflanzen giessen, Das Telefon abnehmen.',
+                'imgpath': '',
+            },
+            'computer': {
+                'title': 'Informatik',
+                'text': 'Duch den Betrieb und die Schule lernen wir wie man selber Webseiten programmiert. Es wird einem auch ein algorythmischer denkprozess nahegelegt der hilft mit komplexeren programmier Themen umzuggehen wie bspw. Datenbanken.',
+                'imgpath': '',
+            },
+            'tel': {
+                'title': 'Kommunikation',
+                'text': 'Als Mediamatiker ist es wichtig mit anderen zu kommunizieren sei es im Team oder mit Kunden.',
+                'imgpath': '',
+            },
+            'schule': {
+                'title': 'Ausbildung',
+                'text': 'In der Schule lernen wir viele dinge die uns später im alltag der Arbeit begegnen. </br></br> In den gestaltungs Fächern wird uns die Theorie nahe gelegt so dass wir sie dann in praktischen projekten umsetzen können. Was wir für Rechte haben und wie die Wirtschaft funktioniert lernen wir wir jede woche während drei lektionen in Wirtschaft und Recht. Manche Fächer die man aus der kennt wie sport mathematik oder englisch begleiten uns immer noch.',
+                'imgpath': 'https://clientis-lehrlinge.ch/images_upload/gross/KV_Schaffhausen.jpg',
+            },
         }
 
         function active(name) {
@@ -121,29 +167,47 @@
         }
 
         $("#lehre-blob").mousemove(function(event) {
-            
+
             if (currentrect == '') {
                 $('.hover-box').css('display', 'none');
                 return
-            }
-            else{
+            } else {
                 $('.hover-box').css('display', 'unset');
             }
 
             var cInof = infos[currentrect.getAttribute('id')]
 
-            $('.hover-box').css('top', event.pageY + 30);
+            if (screen.height/2 < event.clientY) {
+                $('.hover-box').css('top', 'unset');
+                $('.hover-box').css('bottom', screen.height - event.pageY - 30);
+            }
+            else {
+                $('.hover-box').css('bottom', 'unset');
+                $('.hover-box').css('top', event.pageY + 30);
+            }
+
             $('.hover-box').css('left', event.pageX - $('.hover-box').width() / 2);
 
-            $('.hover-box').html(
-                '<div><h2>' + cInof['title'] + '</h2>' +
-                '</div>' + 
-                '<p>' + cInof['text'] + '</p>' +
-                '<img src="' + cInof['imgpath'] + '" alt="fasdfasd">'
+            if (cInof['imgpath'] != '') {
+
+                $('.hover-box').html(
+                    '<div><h2>' + cInof['title'] + '</h2>' +
+                    '</div>' +
+                    '<p>' + cInof['text'] + '</p>' +
+                    '<img src="' + cInof['imgpath'] + '" alt="fasdfasd">'
                 );
+            }
+            else {
+                $('.hover-box').html(
+                    '<div><h2>' + cInof['title'] + '</h2>' +
+                    '</div>' +
+                    '<p>' + cInof['text'] + '</p>'  
+                );
+            }
         });
 
         /* <img src="' + cInof['imgpath'] + '" alt="fasdfasd"> */
+        /*  */
         /* <span uk-icon="close" onclick="$(\'.hover-box\').css(\'display\', \'none\');"></span> */
     </script>
 

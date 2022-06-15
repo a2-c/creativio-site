@@ -14,13 +14,15 @@
                     <span class="t-color-white">www.a2-c.ch</span><br>
                 </div>
                 <div class="t-right">
-                    <a class="reset-link link-light u-hover" href="index.php">Über uns </a><br>
+<!--                     <a class="reset-link link-light u-hover" href="index.php">Über uns </a><br>
                     <a class="reset-link link-light u-hover" href="wwm.php">Was wir machen </a><br>
                     <a class="reset-link link-light u-hover" href="lehre.php">Lehre </a><br>
-                    <a class="reset-link link-light u-hover" href="kontakt">Kontakt </a><br>
-                    <a class="reset-link link-light u-hover" href="disclaimer">Disclaimer & Datenschutz</a><br>
+                    <a class="reset-link link-light u-hover" href="kontakt">Kontakt </a><br> -->
+                    <a class="reset-link link-light u-hover" href="disclaimer.php">Disclaimer & Datenschutz</a><br>
                 </div>
             </div>
+
+            <div><a href="#top" class="reset-link link-light u-hover">Nach oben</a></div>
 
         </div>
     </div>

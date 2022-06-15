@@ -5,7 +5,7 @@
 
             <div class="t-center team-body">
                 <h3 class="team-name" itemprop="name">Martin Ahrend</h3>
-               <p class="team-title"  itemprop="jobTitle">Ceo</p>
+               <p class="team-title"  itemprop="jobTitle">CEO</p>
             </div>
         </div>
     </div>

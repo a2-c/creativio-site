@@ -81,7 +81,7 @@
                 </div>
             </div>
 
-            <div class="container-parent bg-light-blue">
+            <div class="container-parent bg-light-blue" id="produkte">
                 <div class="container">
                     <div class="padding-y">
                         <h1 class="margin-remove">Produkte</h1>
@@ -119,10 +119,9 @@
 
                         <div>
                             <div class="detail-list-container">
-                                <h3 class="margin-remove">Andere Projekte</h3>
+                                <h3 class="margin-remove">Andere Produkte</h3>
                                 <div class="detail-list grid grid-2">
                                     <div>
-
                                         <div>fasdf</div>
                                         <div>fasfasdfdf</div>
                                         <div>fasdfasdff</div>
@@ -141,6 +140,28 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="t-large">
+                            <h2>Notizen</h2>
+                            <ul>
+                                <li>Projekte
+                                    <ul>
+                                        <li>Webapplikationen</li>
+                                        <li>Aus- und Weiterbildung</li>
+                                        <li>Projektmanagement</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>Produkte
+                                    <ul>
+                                        <li>Building API</li>
+                                        <li>Virtual Training Center</li>
+                                        <li>gebäudedaten.ch</li>
+                                        <li>eValo</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
