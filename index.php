@@ -60,8 +60,11 @@
         <div class="bg-grey margin-y padding-y">
             <div class="container">
                 <div class="grid grid-2 flex-middle">
-                    <div class="flex flex-center" style="justify-content: center">
-                        <iframe width="430" height="242" src="https://www.youtube.com/embed/0e3Zko031RE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div>
+                        <img src="images/martinVideoVorschau.png" alt="martinVideoVorschau" id="martinVideoVorschau" style="width: 100%" onclick="showvideo()">
+                        <div class="t-center">
+                            <b>Martin Ahrend über die a2-c</b>
+                        </div>
                     </div>
                     <div>
                         <h2 class="team-name">Martin Ahrend</h2>
@@ -74,6 +77,21 @@
                     </div>
                 </div>
             </div>
+            <div class="martinvideo" id="martinvideo" onclick="hidevideo()">
+                <div class="martinvideo-panel">
+                    <iframe style="width: 100%; height: 100%" src="https://www.youtube.com/embed/0e3Zko031RE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            <script>
+                function showvideo() {
+                    document.getElementById('martinvideo').style.display = 'flex';
+                    document.body.style.overflow = "hidden"
+                }
+                function hidevideo() {
+                    document.getElementById('martinvideo').style.display = 'none'
+                    document.body.style.overflow = "unset"
+                }
+            </script>
         </div>
 
 

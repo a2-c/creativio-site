@@ -33,11 +33,13 @@
 
             var title = document.getElementById('song-title');
             
-
+            var pausiertText = 'Pausiert'
+            var spielendText = '<bold>Spielend</bold>'
 
             const songPlaylist = [
-                ['Toto - Africa', 'africa.mp3'],
                 ['Dion - Wanderer', 'wanderer.mp3'],
+                ['Toto - Africa', 'africa.mp3'],
+                ['- - What is Love', 'love.mp3'],
             ];
 
             currentSongIndex = 0;
@@ -50,9 +52,9 @@
                 volume: 1.0,
             });
 
+            var seekId;
+            var saveSeek;
             
-
-
             function nextSong(dir="right") {
                 var button = document.getElementById('pausebutton');
                 
@@ -75,7 +77,7 @@
 
                 sound.pause()
                 button.setAttribute('state', 'playing')
-                button.innerHTML = 'Playing'
+                button.innerHTML = pausiertText
 
                 title.innerHTML = songPlaylist[currentSongIndex][0]
                 songpath = "files/audio/"+songPlaylist[currentSongIndex][1]
@@ -84,7 +86,9 @@
                     src: [songpath],
                     volume: 1.0,
                 });
-                sound.play()
+                var seekId = sound.play()
+
+                console.log('Seek Id ', seekId);
             }
 
             function togglePause() {
@@ -94,20 +98,24 @@
 
                 if (button.getAttribute('state') == 'paused') {
                     button.setAttribute('state', 'playing')
-                    button.innerHTML = 'Playing'
-                    sound.play()
+                    button.innerHTML = spielendText
+                    var seekId = sound.play()
+                    sound.seek(saveSeek, seekId);
                 }
                 else {
                     button.setAttribute('state', 'paused')
-                    button.innerHTML = 'Paused'    
+                    button.innerHTML = pausiertText  
                     sound.pause()
+                    saveSeek = sound.seek(seekId);
+                    console.log(saveSeek)
                 }
             }
         </script>
 
         <div class="lehre-player-controls">
             <button onclick="nextSong('left')">←</button>
-            <button id="pausebutton" onclick="togglePause()" state="paused">Paused</button>
+            <!-- <button id="pausebutton" onclick="togglePause()" state="paused">Paused</button> -->
+            <img src="images/player/play.png" width="50" id="pausebutton" onclick="togglePause()" state="paused">
             <button onclick="nextSong()">→</button>
         </div>
     </div>
@@ -120,7 +128,7 @@
                 <!--                 <h1>Lehre</h1>
                 <p>Wir bieten alle zwei Jahre eine vier jährige Mediamatiker Ausbildung an.</p> -->
 
-                <?php include('images/lehreblobv2.svg') ?>
+                <?php include('images/lehreblobv3.svg') ?>
             </div>
 
         </div>
@@ -157,6 +165,16 @@
                     <div>
                         <h3>Schnupperlehre</h3>
                         <p>Falls du mal einen Einblick in den Beruf des Mediamatikers haben willst kannst du uns unter Kontakt mit deinem Anliegen erreichen.</p>
+
+                        <div class="grid grid-2">
+                            <div>
+                                <h4>Zwei Tage</h4>
+                            </div>
+                            <div>
+                                <h4>Ein Tag</h4>
+                            </div>
+                        </div>
+
                         <p>Weitere Infos zu Beruf des Mediamatikers</p>
                         <a href="https://biz-sh.ch/?rubrik=biz_detail&lang=1&SWISSDOK_NR_AD=0561130" target="_blank">BIZ Schaffhausen</a><br>
                         <a href="https://www.berufsberatung.ch/dyn/show/1900?lang=de&idx=30&id=4034" target="_blank">Berufsberatung</a>
@@ -210,7 +228,7 @@
                 'imgpath': '',
             },
             'kv': {
-                'title': 'Kaufmann',
+                'title': 'Kaufperson',
                 'text': 'Das ist der Boden',
                 'imgpath': '',
             },
@@ -233,6 +251,11 @@
                 'title': 'Ausbildung',
                 'text': 'In der Schule lernen wir viele dinge die uns später im alltag der Arbeit begegnen. </br></br> In den gestaltungs Fächern wird uns die Theorie nahe gelegt so dass wir sie dann in praktischen projekten umsetzen können. Was wir für Rechte haben und wie die Wirtschaft funktioniert lernen wir wir jede woche während drei lektionen in Wirtschaft und Recht. Manche Fächer die man aus der kennt wie sport mathematik oder englisch begleiten uns immer noch.',
                 'imgpath': 'https://clientis-lehrlinge.ch/images_upload/gross/KV_Schaffhausen.jpg',
+            },
+            'farbe': {
+                'title': 'Kreativität',
+                'text': '',
+                'imgpath': '',
             },
         }
 
