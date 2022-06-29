@@ -128,13 +128,19 @@
 
         <!-- Hero Shot -->
         <div class="lehre-blob" id="lehre-blob">
-            <div class="appear-at-large" style="height: 100%; padding: 0; text-align: center;">
+            <div class="appear-at-medium" style="height: 100%; padding: 0; text-align: center;">
             
                 <?php include('images/lehreblobv3.svg') ?>
             </div>
 
-            <div class="hide-at-large blob-small">
+            <div class="hide-at-medium blob-small">
                 <?php include('images/lehreblobv3.svg') ?>
+            </div>
+
+            <div class="hover-box">
+                <h2>Thema</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, veritatis! Sit fuga harum, architecto itaque amet sequi, magni dolores eveniet et similique totam! Dolorem quam officia eveniet vero et itaque.</p>
+                <img src="images/heroshot.JPG" alt="fasdfasd">
             </div>
 
         </div>
@@ -189,11 +195,7 @@
             </div>
         </div>
 
-        <div class="hover-box">
-            <h2>Thema</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, veritatis! Sit fuga harum, architecto itaque amet sequi, magni dolores eveniet et similique totam! Dolorem quam officia eveniet vero et itaque.</p>
-            <img src="images/heroshot.JPG" alt="fasdfasd">
-        </div>
+
 
 
 

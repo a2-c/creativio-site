@@ -96,7 +96,7 @@
                             <div class="outline-proj">
                                 <h2>Calcoo</h2>
                                 <div class="padding" style="display:flex; justify-content: space-between; flex-direction: column; height: 100%">
-                                    <p class="margin-remove">Das Planungsinstrument wurde für und mit Architekten, Energieberater, Fassadenunternehmer und -planer, Gipser, Maler und Gerüstebauer entwickelt. CALCOO wird in genannten Branchen eingesetzt und ist auch bei Systemanbietern von verputzen Aussenwärmedämmungen im Einsatz.</p>
+                                    <p class="">Das Planungsinstrument wurde für und mit Architekten, Energieberater, Fassadenunternehmer und -planer, Gipser, Maler und Gerüstebauer entwickelt. CALCOO wird in genannten Branchen eingesetzt und ist auch bei Systemanbietern von verputzen Aussenwärmedämmungen im Einsatz.</p>
                                     <br>
                                     <br>
                                     <div>
@@ -107,7 +107,7 @@
                             <div class="outline-proj">
                                 <h2>Gebäudedaten.ch</h2>
                                 <div class="padding" style="display:flex; justify-content: space-between; flex-direction: column; height: 100%">
-                                    <p class="margin-remove">Ein Haus bewerten, sanieren oder eine Solaranlage planen – immer sind Gebäudedaten die Basis.
+                                    <p class="">Ein Haus bewerten, sanieren oder eine Solaranlage planen – immer sind Gebäudedaten die Basis.
                                         Dank gebäudedaten.ch entfällt das Ausmessen und die mühsame Eingabe in eine komplizierte Software. Durch unseren vereinfachten Prozess werden mittels bequemer Adresseingabe alle relevanten Informationen mithilfe eines virtuellen 3D-Modells visualisiert.</p>
                                     <br>
                                     <br>
@@ -119,7 +119,7 @@
                             <div class="outline-proj">
                                 <h2>eVALO</h2>
                                 <div class="padding" style="display:flex; justify-content: space-between; flex-direction: column; height: 100%">
-                                    <p class="margin-remove">Wer sein Haus sanieren möchte, sollte dies jetzt tun. Aber wer weiss schon, was dabei zu beachten ist? Genau diese Frage brachte die Ideenentwickler auf den Gedanken, eine Informationsplattform zu schaffen, die schnell und einfach einen Überblick über die wichtigsten Voraussetzungen und Möglichkeiten der Sanierung bietet. Eben eVALO, das Analyse-Tool, das jedem Hausbesitzer eine wertvolle Planungsgrundlage für wirkungsvolle Sanierungsmassnahmen, deren Energiesparpotenzial und den potenziellen Fördermitteln an die Hand gibt.
+                                    <p class="">Wer sein Haus sanieren möchte, sollte dies jetzt tun. Aber wer weiss schon, was dabei zu beachten ist? Genau diese Frage brachte die Ideenentwickler auf den Gedanken, eine Informationsplattform zu schaffen, die schnell und einfach einen Überblick über die wichtigsten Voraussetzungen und Möglichkeiten der Sanierung bietet. Eben eVALO, das Analyse-Tool, das jedem Hausbesitzer eine wertvolle Planungsgrundlage für wirkungsvolle Sanierungsmassnahmen, deren Energiesparpotenzial und den potenziellen Fördermitteln an die Hand gibt.
 
                                     </p>
                                     <br>
@@ -132,7 +132,7 @@
                             <div class="outline-proj">
                                 <h2>Virtual Training Center</h2>
                                 <div class="padding" style="display:flex; justify-content: space-between; flex-direction: column; height: 100%">
-                                    <p class="margin-remove">Mit unserer Applikation Virtual Training Center können Sie einfach und intuitiv ihre eigenen Kurse erstellen. Die Kursinhalte können Scorm kompatible Präsentationen, Quizzes, PDFs oder Videos sein.
+                                    <p class="">Mit unserer Applikation Virtual Training Center können Sie einfach und intuitiv ihre eigenen Kurse erstellen. Die Kursinhalte können Scorm kompatible Präsentationen, Quizzes, PDFs oder Videos sein.
                                         
                                     <br>
                                     <br>
