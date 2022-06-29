@@ -94,5 +94,10 @@
 	#timeline_show_more_btn {
 		visibility: visible;
 		margin-top: 2em;
+		border: 10px !important;
+		padding: 1em;
+	}
+	#timeline_show_more_btn:hover {
+		cursor: pointer;
 	}
 }

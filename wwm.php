@@ -83,66 +83,71 @@
 
             <div class="container-parent bg-light-blue" id="produkte">
                 <div class="container">
-                    <div class="padding-y">
+                    <div class="">
                         <h1 class="margin-remove">Produkte</h1>
                     </div>
                 </div>
             </div>
+            <br>
             <div class="container-parent" id="numbers">
                 <div class="container">
                     <div>
-                        <h2>Gebäudedaten schweizweit</h2>
-                        <div class="detail margin-y">
-                            <div class="detail-text">
-                                <h3 class="margin-remove">3D Modelle</h3>
-                                <p class="bold">Das Informationsportal für Haussanierer</p>
-                                <p>Unser 3D-Buildingsplayer lässt sich problemlos in Ihre Webseite integrieren und ermöglicht eine nahtlose Gebäude- und Portfolioanzeige. Topografische Gegebenheiten, Abstände zu Nachbargebäuden und Sichtachsen werden mit einem Klick sichtbar. In Verbindung mit unserer API erhalten Sie eine umfassende Sicht auf Visualisierung und Gebäudedaten.</p>
-
-                                <div class="grid grid-3 t-small">
+                        <div class="grid grid-2">
+                            <div class="outline-proj">
+                                <h2>Calcoo</h2>
+                                <div class="padding" style="display:flex; justify-content: space-between; flex-direction: column; height: 100%">
+                                    <p class="margin-remove">Das Planungsinstrument wurde für und mit Architekten, Energieberater, Fassadenunternehmer und -planer, Gipser, Maler und Gerüstebauer entwickelt. CALCOO wird in genannten Branchen eingesetzt und ist auch bei Systemanbietern von verputzen Aussenwärmedämmungen im Einsatz.</p>
+                                    <br>
+                                    <br>
                                     <div>
-                                        <p><span class="bold" id="abfragen" style="font-size: 2em;">0</span> Abfragen</p>
-                                    </div>
-                                    <div>
-                                        <p><span class="bold" id="parzellen" style="font-size: 2em;">0</span> Parzellen</p>
-                                    </div>
-                                    <div>
-                                        <p><span class="bold" id="gebaeude" style="font-size: 2em;">0</span> Jahre 3D Gebäude</p>
+                                        <a target="_blank" href="http://www.calcoo.ch/" class="wwm-button">ZU CALCOO</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="detail-bilder">
-                                <img src="images/Projektmanagement.jpg" alt="bild" width="150">
-                            </div>
-                        </div>
-
-
-
-                        <div>
-                            <div class="detail-list-container">
-                                <h3 class="margin-remove">Andere Produkte</h3>
-                                <div class="detail-list grid grid-2">
+                            <div class="outline-proj">
+                                <h2>Gebäudedaten.ch</h2>
+                                <div class="padding" style="display:flex; justify-content: space-between; flex-direction: column; height: 100%">
+                                    <p class="margin-remove">Ein Haus bewerten, sanieren oder eine Solaranlage planen – immer sind Gebäudedaten die Basis.
+                                        Dank gebäudedaten.ch entfällt das Ausmessen und die mühsame Eingabe in eine komplizierte Software. Durch unseren vereinfachten Prozess werden mittels bequemer Adresseingabe alle relevanten Informationen mithilfe eines virtuellen 3D-Modells visualisiert.</p>
+                                    <br>
+                                    <br>
                                     <div>
-                                        <div>fasdf</div>
-                                        <div>fasfasdfdf</div>
-                                        <div>fasdfasdff</div>
-                                        <div>fasdf</div>
-                                        <div>fasdf</div>
-                                        <div>fasdf</div>
+                                        <a target="_blank" href="https://www.building3d.ch/" class="wwm-button">ZU gebäudedaten.ch</a>
                                     </div>
-                                    <div>
+                                </div>
+                            </div>
+                            <div class="outline-proj">
+                                <h2>eVALO</h2>
+                                <div class="padding" style="display:flex; justify-content: space-between; flex-direction: column; height: 100%">
+                                    <p class="margin-remove">Wer sein Haus sanieren möchte, sollte dies jetzt tun. Aber wer weiss schon, was dabei zu beachten ist? Genau diese Frage brachte die Ideenentwickler auf den Gedanken, eine Informationsplattform zu schaffen, die schnell und einfach einen Überblick über die wichtigsten Voraussetzungen und Möglichkeiten der Sanierung bietet. Eben eVALO, das Analyse-Tool, das jedem Hausbesitzer eine wertvolle Planungsgrundlage für wirkungsvolle Sanierungsmassnahmen, deren Energiesparpotenzial und den potenziellen Fördermitteln an die Hand gibt.
 
-                                        <div>fasfasdfdf</div>
-                                        <div>fasfasdfdf</div>
-                                        <div>fasdfasdff</div>
-                                        <div>fasdf</div>
-                                        <div>fafasdfsdf</div>
-                                        <div>fasdf</div>
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <div>
+                                        <a target="_blank" href="https://www.evalo.ch/" class="wwm-button">ZU eValo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="outline-proj">
+                                <h2>Virtual Training Center</h2>
+                                <div class="padding" style="display:flex; justify-content: space-between; flex-direction: column; height: 100%">
+                                    <p class="margin-remove">Mit unserer Applikation Virtual Training Center können Sie einfach und intuitiv ihre eigenen Kurse erstellen. Die Kursinhalte können Scorm kompatible Präsentationen, Quizzes, PDFs oder Videos sein.
+                                        
+                                    <br>
+                                    <br>
+                                    Erstellen Sie beliebig viele User, Usergruppen und Kurse.
+                                        Überwachen Sie den Lernfortschritt mit den Statistik-Funktionen.</p>
+                                    <br>
+                                    <br>
+                                    <div>
+                                        <a target="_blank" href="kontakt.php" class="wwm-button">E-Learning kaufen</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="t-large">
+                        <!-- <div class="">
                             <h2>Notizen</h2>
                             <ul>
                                 <li>Projekte
@@ -153,19 +158,24 @@
                                     </ul>
                                 </li>
                                 <br>
-                                <li>Produkte
+                                <li>Produkte (Kurzer Text + Link)
                                     <ul>
-                                        <li>Building API</li>
-                                        <li>Virtual Training Center</li>
+                                        <li>Calcoo</li>
+                                        <li>Virtual Training Center (Hier Ein wenig erklären)</li>
                                         <li>gebäudedaten.ch</li>
                                         <li>eValo</li>
                                     </ul>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
 
     </main>

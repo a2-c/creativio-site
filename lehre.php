@@ -20,7 +20,7 @@
 
     </style>
 
-    <div class="lehre-player">
+    <div class="lehre-player appear-at-large">
         <div class="lehre-player-title">
             <div id="song-title">Song Title</div>
             <!-- <div>0 / 2:30</div> -->
@@ -34,12 +34,14 @@
             var title = document.getElementById('song-title');
             
             var pausiertText = 'Pausiert'
+            var pausiertPath = 'images/player/Pause.png'
             var spielendText = '<bold>Spielend</bold>'
+            var spielendPath = 'images/player/play.png'
 
             const songPlaylist = [
-                ['Dion - Wanderer', 'wanderer.mp3'],
+                ['Dion Wanderer', 'wanderer.mp3'],
                 ['Toto - Africa', 'africa.mp3'],
-                ['- - What is Love', 'love.mp3'],
+                ['hello - What is Love', 'love.mp3'],
             ];
 
             currentSongIndex = 0;
@@ -77,6 +79,7 @@
 
                 sound.pause()
                 button.setAttribute('state', 'playing')
+                button.setAttribute('src', pausiertPath)
                 button.innerHTML = pausiertText
 
                 title.innerHTML = songPlaylist[currentSongIndex][0]
@@ -98,12 +101,14 @@
 
                 if (button.getAttribute('state') == 'paused') {
                     button.setAttribute('state', 'playing')
+                    button.setAttribute('src', pausiertPath)
                     button.innerHTML = spielendText
                     var seekId = sound.play()
                     sound.seek(saveSeek, seekId);
                 }
                 else {
                     button.setAttribute('state', 'paused')
+                    button.setAttribute('src', spielendPath)
                     button.innerHTML = pausiertText  
                     sound.pause()
                     saveSeek = sound.seek(seekId);
@@ -113,10 +118,9 @@
         </script>
 
         <div class="lehre-player-controls">
-            <button onclick="nextSong('left')">←</button>
-            <!-- <button id="pausebutton" onclick="togglePause()" state="paused">Paused</button> -->
+            <img src="images/player/Skip_Rechts.png" width="50" onclick="nextSong('left')">
             <img src="images/player/play.png" width="50" id="pausebutton" onclick="togglePause()" state="paused">
-            <button onclick="nextSong()">→</button>
+            <img src="images/player/Skip_Links.png" width="50" onclick="nextSong()">
         </div>
     </div>
 
@@ -124,10 +128,12 @@
 
         <!-- Hero Shot -->
         <div class="lehre-blob" id="lehre-blob">
-            <div class="" style="height: 100%; padding: 0; text-align: center;">
-                <!--                 <h1>Lehre</h1>
-                <p>Wir bieten alle zwei Jahre eine vier jährige Mediamatiker Ausbildung an.</p> -->
+            <div class="appear-at-large" style="height: 100%; padding: 0; text-align: center;">
+            
+                <?php include('images/lehreblobv3.svg') ?>
+            </div>
 
+            <div class="hide-at-large blob-small">
                 <?php include('images/lehreblobv3.svg') ?>
             </div>
 
@@ -167,7 +173,7 @@
                         <p>Falls du mal einen Einblick in den Beruf des Mediamatikers haben willst kannst du uns unter Kontakt mit deinem Anliegen erreichen.</p>
 
                         <div class="grid grid-2">
-                            <div>
+                            <div> 
                                 <h4>Zwei Tage</h4>
                             </div>
                             <div>

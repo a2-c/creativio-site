@@ -35,19 +35,19 @@
                     <div>
                         <div class="t-center margin-y">
                             <a href="" class="reset-link">
-                                <img src="images/Innovative Webapplikationen.png" alt="Innovative Webapplikationen" style="width: 30%">
+                                <img src="images/Innovative Webapplikationen.png" alt="Innovative Webapplikationen" style="width: clamp(200px, 30%, 40%)">
                                 <p class="ideenschmiedeklein">Innovative Webapplikationen</p>
                             </a>
                         </div>
                         <div class="t-center margin-y">
                             <a href="" class="reset-link">
-                                <img src="images/Aus- und Weiterbildung.jpg" alt="Innovative Webapplikationen" style="width: 30%">
+                                <img src="images/Aus- und Weiterbildung.jpg" alt="Innovative Webapplikationen" style="width: clamp(200px, 30%, 40%)">
                                 <p class="ideenschmiedeklein">Aus - und Weiterbildung</p>
                             </a>
                         </div>
                         <div class="t-center margin-y">
                             <a href="" class="reset-link">
-                                <img src="images/Projektmanagement.jpg" alt="Innovative Webapplikationen" style="width: 30%">
+                                <img src="images/Projektmanagement_v2.png" alt="Innovative Webapplikationen" style="width: clamp(200px, 30%, 40%)">
                                 <p class="ideenschmiedeklein">Projektmanagement</p>
                             </a>
                         </div>
@@ -61,7 +61,9 @@
             <div class="container">
                 <div class="grid grid-2 flex-middle">
                     <div>
-                        <img src="images/martinVideoVorschau.png" alt="martinVideoVorschau" id="martinVideoVorschau" style="width: 100%" onclick="showvideo()">
+                        <div>
+                            <img src="images/martinVideoVorschau.png" alt="martinVideoVorschau" id="martinVideoVorschau" style="width: 100%" onclick="showvideo()">
+                        </div>
                         <div class="t-center">
                             <b>Martin Ahrend über die a2-c</b>
                         </div>
@@ -70,7 +72,7 @@
                         <h2 class="team-name">Martin Ahrend</h2>
                         <p class="team-title">a2-c AG CEO</p>
 
-                        <div class="grid-2 grid">
+                        <div class="grid-2 grid" style="margin-bottom: 2em">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequatur quis qui amet quibusdam vero nisi.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequatur quis qui amet quibusdam vero nisi.</p>
                         </div>
@@ -118,7 +120,7 @@
             </div>
         </div>
 
-        <div class="margin-y padding-y" id="numbers">
+        <div class="margin-y" id="numbers">
             <div class="container">
 
                 <h2 class="abbschnitt-titel">Unser Erfolg in Zahlen</h2>
@@ -139,6 +141,13 @@
 <!--                     <div>
                         <p><span class="bold t-color-black" id="lehrlinge" style="font-size: 2em;">52</span> Glückliche Kunden</p>
                     </div> -->
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </div>
 
             </div>

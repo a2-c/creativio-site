@@ -1,11 +1,11 @@
-<div class="team-container">
+<div class="team-container" style="margin-bottom: 2em">
     <div>
         <div class="t-wrap t-center" itemscope itemtype="http://schema.org/Person">
             <img src="images/team/martin_a.png" alt="" class="uk-width-1-1" itemprop="image">
 
             <div class="t-center team-body">
                 <h3 class="team-name" itemprop="name">Martin Ahrend</h3>
-               <p class="team-title"  itemprop="jobTitle">CEO</p>
+                <p class="team-title" itemprop="jobTitle">CEO</p>
             </div>
         </div>
     </div>
@@ -31,8 +31,7 @@
             </div>
         </div>
     </div>
-    </div>
-    <div class="team-container">
+
     <div>
         <div class="t-wrap t-center" itemscope itemtype="http://schema.org/Person">
             <div class="uk-card-media-top">
@@ -66,8 +65,6 @@
             </div>
         </div>
     </div>
-    </div>
-    <div class="team-container">
     <div>
         <div class="t-wrap t-center" itemscope itemtype="http://schema.org/Person">
             <div class="uk-card-media-top">
@@ -82,7 +79,13 @@
 </div>
 <br>
 <br>
-<div class="padding-y">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="">
 
     <h3>Lehrlinge</h3>
     <div class="team-container ">
@@ -108,6 +111,6 @@
                 </div>
             </div>
         </div>
-    
+
     </div>
 </div>

@@ -12,38 +12,32 @@
 
 <body>
 
-    <div style="display:flex; flex-wrap: wrap">
-        <div class="width-1-2" style="background-color: whitesmoke; border: 3px solid black">fasdf</div>
+    <div class="bg-primary">
+        <div class="container">
+            <h1>Hallo</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+        </div>
+    </div>
+    <div class="bg-secondary">
+        <div class="container">
 
-        <div class="width-1-2" style="display:flex; flex-wrap: wrap">
-            <div class="width-1-2" style="background-color: whitesmoke; border: 3px solid black">fasdf</div>
-            <div class="width-1-2" style="border: 3px solid black">fasdf</div>
+            <div class="grid-2-narrow child-p-2">
+                <div class="bg-warning">
+                    <h2>Hallo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores commodi, suscipit facilis, enim veniam sed unde quam explicabo, ipsa laboriosam ab voluptatum quos inventore reprehenderit nesciunt pariatur consectetur aliquid nemo.</p>
+                </div>
+                <div class="bg-warning">
+                    <h2>Hallo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores commodi, suscipit facilis, enim veniam sed unde quam explicabo, ipsa laboriosam ab voluptatum quos inventore reprehenderit nesciunt pariatur consectetur aliquid nemo.</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="child-p-1 grid-3">
 
-        <div>
-            <div class="p-1" style="background-color: whitesmoke">
-                Hallo
-            </div>
-        </div>
-        <div>
-            <div class="p-1" style="background-color: whitesmoke">
-                Hallo
-            </div>
-        </div>
-        <div>
-            <div class="p-1" style="background-color: whitesmoke">
-                Hallo
-            </div>
-        </div>
-        <div>
-            <div class="p-1" style="background-color: whitesmoke">
-                Hallo
-            </div>
-        </div>
-    </div>
+    <script>
+        console.table()
+    </script>
 
 </body>
 
