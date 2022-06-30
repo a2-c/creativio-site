@@ -97,7 +97,7 @@ h3 {
 }
 
 .team-name {
-    font-size: 27px;
+    font-size: 20px;
     margin-bottom: 0.1em;
     margin-top: 0.9em;
 }
@@ -297,7 +297,7 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
-    height: 7vh;
+    height: 8vh;
     z-index: 100;
 }
 
@@ -376,8 +376,8 @@ nav>ul:hover>* {
 
 .team-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 30%);
-    gap: 5%
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6%
 }
 
 .team-container>* {
@@ -391,7 +391,6 @@ nav>ul:hover>* {
 
 
 .lehre-blob {
-    /*     background-color: var(--dark-grey); */
     background-color: #dee4ee;
     height: 93vh;
     display: flex;
@@ -515,7 +514,7 @@ nav>ul:hover>* {
     }
 
     .team-container {
-        grid-template-columns: repeat(auto-fill, 47.5%);
+        grid-template-columns: repeat(2, 1fr);
         row-gap: 10px
     }
 
@@ -585,7 +584,8 @@ nav>ul:hover>* {
     border-radius: 15px;
     pointer-events: none;
     color: var(--dark-blue) !important;
-    border: 3px solid var(--dark-blue)
+    border: 3px solid var(--dark-blue);
+    font-size: smaller;
 }
 
 @media (max-width: 768px) {
@@ -594,7 +594,6 @@ nav>ul:hover>* {
         width: 96%;
         border: 0;
         margin: 1em auto;
-        font-size: smaller;
     }
     .lehre-blob {
         flex-direction: column;
@@ -634,14 +633,14 @@ nav>ul:hover>* {
 
     input[type="submit"]:hover {
         cursor: pointer;
-        background-color: var(--dark-blue);
-        color: var(--white)
+        opacity: 0.9;
     }
-
+    
     input[type="submit"] {
         text-transform: uppercase;
         width: 130px;
-        background-color: var(--light-blue)
+        background-color: var(--dark-blue);
+        color: var(--white)
     }
 
 

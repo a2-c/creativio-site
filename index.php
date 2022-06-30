@@ -17,7 +17,7 @@
             <div class="container-parent bild">
                 <div class="t-color-grey container heroshot">
                     <h1 class="bold">a2-c</h1>
-                    <h3>Vom ersten Gedankensplitter <br> bis zur fertigen Lösung</h3>
+                    <h3 style="font-weight: 100">Vom ersten Gedankensplitter <br> bis zur fertigen Lösung</h3>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
             <div class="container">
 
                 <h2 class="abbschnitt-titel">Unser Team</h2>
-                <p>Unser Team setzt sich aus den Bereichen bla bal bla, bla bla und bla bla zusammen und wir verstehen uns miteinander genau so gut wie mit der Technik. Dies ist seit Jahren ein Erfolgsrezept für eine Angenehme und wirkungsvolle zusammenarbeit. Wir Freuen uns immer darauf neue Mitarbeiter zu begrüssen.</p>
+                <p style="margin-bottom: 3em; max-width: 730px;">Unser Team setzt sich aus den Bereichen bla bal bla, bla bla und bla bla zusammen und wir verstehen uns miteinander genau so gut wie mit der Technik. Dies ist seit Jahren ein Erfolgsrezept für eine Angenehme und wirkungsvolle zusammenarbeit. Wir Freuen uns immer darauf neue Mitarbeiter zu begrüssen.</p>
 
                 <?php include('assets/team.php') ?>
 

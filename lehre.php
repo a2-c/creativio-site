@@ -129,18 +129,55 @@
         <!-- Hero Shot -->
         <div class="lehre-blob" id="lehre-blob">
             <div class="appear-at-medium" style="height: 100%; padding: 0; text-align: center;">
-            
-                <?php include('images/lehreblobv3.svg') ?>
+
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1305.5 911.9" style="enable-background:new 0 0 1305.5 911.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0;}
+</style>
+<image style="overflow:visible;enable-background:new    ;" width="2388" height="1668" xlink:href="images/Creativio_Illustration_2.0.png"  transform="matrix(0.5467 0 0 0.5467 0 0)">
+</image>
+<g id="regionen" class="st0">
+	<circle id="uhr" cx="591" cy="155.9" r="85"/>
+	<rect id="kv" x="87" y="68.9" width="304" height="177"/>
+	<path id="pflanze" d="M161,456.8l26-40.9l4-64l44-36l29,25l-5,59l-20,60.9l7,22.1l40-16l46.3-10.1l18.6,26.1v33l-21.9,28l-35,5
+		h-29.1h-15.8l-15.1,11l-1,19l37,5l38-3l39,9l13,20v25l-11,19l-39,13l-57-12l-40-3l20,25l61,10l-11,35l1,42l-36,44l-20,15l-46-6
+		l-26-27l-15-36l-3-49v-19.1l17-29.9l-6-12l-49,9l-52-1c0,0-11-16-11-18s-7-43-7-43l11-17h44l69,6l17-1l-2-23l-27-14c0,0-34-8-39-11
+		s-29-16-29-16l-22-22c0,0-9-13-10-20s-2-38-3-42s8-28,8-28l47,5l22,30L161,456.8z"/>
+	<rect id="schule" x="761.6" y="123.8" width="425.1" height="174.7"/>
+	<rect id="tel" x="1102.8" y="352.2" width="141.7" height="250.4"/>
+	<rect id="computer" x="591" y="432" width="118.3" height="118.3"/>
+	<rect id="farbe" x="800" y="672" width="334" height="210"/>
+</g>
+</svg>
             </div>
 
             <div class="hide-at-medium blob-small">
-                <?php include('images/lehreblobv3.svg') ?>
+            <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1305.5 911.9" style="enable-background:new 0 0 1305.5 911.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0;}
+</style>
+<image style="overflow:visible;enable-background:new    ;" width="2388" height="1668" xlink:href="images/Creativio_Illustration_2.0.png"  transform="matrix(0.5467 0 0 0.5467 0 0)">
+</image>
+<g id="regionen" class="st0">
+	<circle id="uhr" cx="591" cy="155.9" r="85"/>
+	<rect id="kv" x="87" y="68.9" width="304" height="177"/>
+	<path id="pflanze" d="M161,456.8l26-40.9l4-64l44-36l29,25l-5,59l-20,60.9l7,22.1l40-16l46.3-10.1l18.6,26.1v33l-21.9,28l-35,5
+		h-29.1h-15.8l-15.1,11l-1,19l37,5l38-3l39,9l13,20v25l-11,19l-39,13l-57-12l-40-3l20,25l61,10l-11,35l1,42l-36,44l-20,15l-46-6
+		l-26-27l-15-36l-3-49v-19.1l17-29.9l-6-12l-49,9l-52-1c0,0-11-16-11-18s-7-43-7-43l11-17h44l69,6l17-1l-2-23l-27-14c0,0-34-8-39-11
+		s-29-16-29-16l-22-22c0,0-9-13-10-20s-2-38-3-42s8-28,8-28l47,5l22,30L161,456.8z"/>
+	<rect id="schule" x="761.6" y="123.8" width="425.1" height="174.7"/>
+	<rect id="tel" x="1102.8" y="352.2" width="141.7" height="250.4"/>
+	<rect id="computer" x="591" y="432" width="118.3" height="118.3"/>
+	<rect id="farbe" x="800" y="672" width="334" height="210"/>
+</g>
+</svg>
             </div>
 
             <div class="hover-box">
                 <h2>Thema</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, veritatis! Sit fuga harum, architecto itaque amet sequi, magni dolores eveniet et similique totam! Dolorem quam officia eveniet vero et itaque.</p>
-                <img src="images/heroshot.JPG" alt="fasdfasd">
             </div>
 
         </div>
@@ -258,7 +295,7 @@
             'schule': {
                 'title': 'Ausbildung',
                 'text': 'In der Schule lernen wir viele dinge die uns später im alltag der Arbeit begegnen. </br></br> In den gestaltungs Fächern wird uns die Theorie nahe gelegt so dass wir sie dann in praktischen projekten umsetzen können. Was wir für Rechte haben und wie die Wirtschaft funktioniert lernen wir wir jede woche während drei lektionen in Wirtschaft und Recht. Manche Fächer die man aus der kennt wie sport mathematik oder englisch begleiten uns immer noch.',
-                'imgpath': 'https://clientis-lehrlinge.ch/images_upload/gross/KV_Schaffhausen.jpg',
+                'imgpath': '',
             },
             'farbe': {
                 'title': 'Kreativität',
