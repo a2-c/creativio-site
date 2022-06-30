@@ -100,7 +100,7 @@
                                     <br>
                                     <br>
                                     <div>
-                                        <a target="_blank" href="http://www.calcoo.ch/" class="wwm-button">ZU CALCOO</a>
+                                        <a target="_blank" href="http://www.calcoo.ch/" class="button">ZU CALCOO</a>
                                     </div>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@
                                     <br>
                                     <br>
                                     <div>
-                                        <a target="_blank" href="https://www.building3d.ch/" class="wwm-button">ZU gebäudedaten.ch</a>
+                                        <a target="_blank" href="https://www.building3d.ch/" class="button">ZU gebäudedaten.ch</a>
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +125,7 @@
                                     <br>
                                     <br>
                                     <div>
-                                        <a target="_blank" href="https://www.evalo.ch/" class="wwm-button">ZU eValo</a>
+                                        <a target="_blank" href="https://www.evalo.ch/" class="button">ZU eValo</a>
                                     </div>
                                 </div>
                             </div>
@@ -141,7 +141,7 @@
                                     <br>
                                     <br>
                                     <div>
-                                        <a target="_blank" href="kontakt.php" class="wwm-button">E-Learning kaufen</a>
+                                        <a target="_blank" href="kontakt.php" class="button">E-Learning kaufen</a>
                                     </div>
                                 </div>
                             </div>

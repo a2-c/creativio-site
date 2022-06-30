@@ -16,7 +16,8 @@
         <div>
             <div class="container-parent bild">
                 <div class="t-color-grey container heroshot">
-                    <h1 class="bold">a2-c</h1>
+                    <img src="images/logo.svg" width="120" alt="">
+                    <!-- <h1 class="bold">a2-c</h1> -->
                     <h3 style="font-weight: 100">Vom ersten Gedankensplitter <br> bis zur fertigen Lösung</h3>
                 </div>
             </div>
@@ -125,7 +126,7 @@
 
                 <h2 class="abbschnitt-titel">Unser Erfolg in Zahlen</h2>
 
-                <div class="grid grid-2 t-large">
+                <div class="grid grid-2 t-large grid-2-at-numbers">
                     <div>
                         <p><span class="bold t-color-black" id="angestellte" style="font-size: 2em; margin-right: 0.5em">0</span> Angestelle</p>
                     </div>

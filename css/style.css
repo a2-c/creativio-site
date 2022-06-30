@@ -44,7 +44,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    background-color: var(--white)
+    background-color: var(--white);
 }
 
 main {
@@ -350,10 +350,6 @@ nav>ul:hover>* {
     border-width: 0;
 }
 
-.button {
-    background-color: var(--white);
-    font-size: 1.2em;
-}
 
 
 /* DROPDWON */
@@ -408,11 +404,6 @@ nav>ul:hover>* {
     max-width: 100%;
 }
 
-.blob-small svg {
-    height: unset;
-    width: 100vw;
-    padding-top: 0;
-}
 
 
 .outline-proj {
@@ -505,6 +496,14 @@ nav>ul:hover>* {
         row-gap: 50px
     }
 
+    .grid-2-at-numbers {
+        row-gap: 5px
+    }
+
+    .grid-2-at-numbers p {
+        margin: 0.5em
+    }
+
     .grid-3>* {
         width: 100%;
     }
@@ -521,11 +520,12 @@ nav>ul:hover>* {
     .heroshot {
         font-size: 1.4em;
         top: 60px;
-        left: 30px
+        left: 30px;
     }
 
     .detail {
         flex-direction: column;
+        align-items: center;
     }
 
     .detail>* {
@@ -600,6 +600,16 @@ nav>ul:hover>* {
         justify-content: flex-start;
         height: unset
     }
+    .lehre-blob svg {
+        height: unset !important;
+        padding: 0
+    }
+    .blob-small svg {
+        height: unset;
+        width: 100vw;
+        padding-top: 0;
+    }
+    
 }
 
     .hover-box>* {
@@ -631,14 +641,16 @@ nav>ul:hover>* {
         border-radius: 15px;
     }
 
-    input[type="submit"]:hover {
+    input[type="submit"]:hover, .button:hover {
         cursor: pointer;
         opacity: 0.9;
     }
     
-    input[type="submit"] {
+    input[type="submit"], .button {
         text-transform: uppercase;
+        text-decoration: none;
         width: 130px;
+        padding: 1em;
         background-color: var(--dark-blue);
         color: var(--white)
     }
