@@ -134,7 +134,7 @@
                             opacity: 0;
                         }
                     </style>
-                    <image style="overflow:visible;enable-background:new    ;" width="2388" height="1668" xlink:href="images/Creativio_Illustration_2.0.png" transform="matrix(0.5467 0 0 0.5467 0 0)">
+                    <image style="overflow:visible;enable-background:new    ;" width="2388" height="1668" xlink:href="images/creativio-illustration/Creativio_Illustration_2.0.png" transform="matrix(0.5467 0 0 0.5467 0 0)">
                     </image>
                     <g id="regionen" class="st0">
                         <circle id="uhr" cx="591" cy="155.9" r="85" />
@@ -170,7 +170,7 @@
                         <p>Seit nun mehr als 15 Jahren, können junge Menschen bei der a2-c AG eine Lehre als Mediamatiker anstreben. Die vierjährige Lehre bringt gemeinsam mit der Maturität einen guten Start ins Berufsleben und viele Möglichkeiten für deinen weiterführenden Weg. Vom Webentwickler bis zum Marketingmanager stehen dir nach der Lehre alle Türen offen. Als Allrounder wird man Sich viele Fähigkeiten in den Bereichen Administration, Buchhaltung, Marketing und Informatik aneignen. Wenn du dich also für das Aufbereiten von Informationen und das Mitwirken an komplexen Projekten interessierst, dann bist du bei uns genau richtig!</p>
                     </div>
                     <div class="detail-bilder">
-                        <img src="images/lehre-maxim.jpg" style="filter: brightness(1.5); border-radius: 15px" alt="bild" width="150">
+                        <img src="images/lehre/lehre-maxim.jpg" style="filter: brightness(1.5); border-radius: 15px" alt="bild" width="150">
                     </div>
                 </div>
             </div>
@@ -201,7 +201,12 @@
                         </ul>
                     </div>
                 </div>
+                <script src="js/word-cloud.js"></script>
+                <script>
+
+                </script>
             </div>
+
         </div>
         <div class="bg-grey padding-y">
             <div class="container">

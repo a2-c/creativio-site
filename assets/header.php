@@ -6,9 +6,13 @@
 
             <header>
                 <a href="index.php" style="display: flex;
+    height: 45px;width: 80px">
+                    <img src="images/logo/logo.svg">
+                </a>
+<!--                 <a href="index.php" style="display: flex;
     height: 27px;width: 80px">
                     <img src="images/logo.svg">
-                </a>
+                </a> -->
 
                 <nav class="largenav">
                     <ul>

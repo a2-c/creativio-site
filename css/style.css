@@ -610,6 +610,14 @@ nav>ul:hover>* {
         padding-top: 0;
     }
     
+    .timeline_box > div:nth-child(even) {
+        margin-top: -14px;
+        margin-bottom: 14px;
+    }
+
+    .timeline > .timeline_box > div {
+        width: 76%;
+    }
 }
 
     .hover-box>* {

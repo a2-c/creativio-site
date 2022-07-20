@@ -16,7 +16,7 @@
         <div>
             <div class="container-parent bild">
                 <div class="t-color-grey container heroshot">
-                    <img src="images/logo.svg" width="120" alt="">
+                    <img src="images/logo/logo.svg" width="120" alt="">
                     <!-- <h1 class="bold">a2-c</h1> -->
                     <h3 style="font-weight: 100">Vom ersten Gedankensplitter <br> bis zur fertigen Lösung</h3>
                 </div>
