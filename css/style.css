@@ -249,26 +249,7 @@ h3 {
 }
 
 
-/* FLEX */
-.flex {
-    display: flex
-}
 
-.flex-column {
-    flex-direction: column
-}
-
-.flex-center {
-    justify-content: center;
-}
-
-.flex-middle {
-    align-items: center;
-}
-
-.flex-between {
-    justify-content: space-between
-}
 
 /* LINKS */
 .reset-link {
@@ -550,6 +531,10 @@ nav>ul:hover>* {
     footer,
     .t-right {
         text-align: left !important;
+    }
+
+    .smaller-small {
+        
     }
 }
 

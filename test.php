@@ -8,35 +8,59 @@
     <title>Test</title>
 
     <link rel="stylesheet" href="test.css">
+
+    <script src="https://unpkg.com/vue@3"></script>
 </head>
 
-<body>
+<body class="">
 
-    <div class="bg-primary">
+    <div class="">
         <div class="container">
             <h1>Hallo</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adip</p>
         </div>
     </div>
-    <div class="bg-secondary">
-        <div class="container">
-
-            <div class="grid-2-narrow child-p-2">
-                <div class="bg-warning">
-                    <h2>Hallo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores commodi, suscipit facilis, enim veniam sed unde quam explicabo, ipsa laboriosam ab voluptatum quos inventore reprehenderit nesciunt pariatur consectetur aliquid nemo.</p>
-                </div>
-                <div class="bg-warning">
-                    <h2>Hallo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores commodi, suscipit facilis, enim veniam sed unde quam explicabo, ipsa laboriosam ab voluptatum quos inventore reprehenderit nesciunt pariatur consectetur aliquid nemo.</p>
-                </div>
-            </div>
+    <div class="" id="app">
+        <div class="container editor">
+            <p class="display" v-html="convert()"></p>
+            <textarea name="" id="" cols="30" rows="10" v-model="content"></textarea>
         </div>
     </div>
 
 
     <script>
-        console.table()
+        const {
+            createApp
+        } = Vue
+
+        createApp({
+            data() {
+                return {
+                    content: " fasdfasdf"
+                }
+            },
+            methods: {
+                convert() {
+                    replacements = [
+                        ['Hello', '<b>Hello</b>'],
+                        ['for', '<span class="keyword">for</span>'],
+                        ['in', '<span class="keyword">in</span>'],
+                        ['\n', '<br>'],
+                    ]
+
+                    var temp = this.content
+
+                    replacements.forEach(el => {
+                        console.log(el)
+                        temp = temp.split(el[0]).join(el[1])
+                        
+                    })
+
+                    return temp
+
+                }
+            }
+        }).mount('#app')
     </script>
 
 </body>

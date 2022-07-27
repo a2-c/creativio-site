@@ -11,7 +11,7 @@
     <?php include('assets/header.php') ?>
 
     <main>
-        <div class="container-parent bg-light-blue">
+        <!-- <div class="container-parent bg-light-blue">
             <div class="container">
                 <div class="padding-y">
                     <h1 class="margin-remove">Projekte</h1>
@@ -19,9 +19,9 @@
             </div>
         </div>
         <br>
-        <br>
+        <br> -->
         <div class="container-parent">
-            <div class="container">
+            <!-- <div class="container">
                 <div class="">
                     <div class="outline-proj">
                         <h2>Webapplikationen</h2>
@@ -79,18 +79,22 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="container-parent bg-light-blue" id="produkte">
+            <div class="container-parent">
                 <div class="container">
                     <div class="">
-                        <h1 class="margin-remove">Produkte</h1>
+                        <br>
+                        <h1 class="margin-remove">Was wir machen zeichnet sich aus durch ...</h1>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="container-parent" id="numbers">
+            <div class="container-parent">
                 <div class="container">
+                    <h2>... unsere Produkte</h2>
+                    <br>
+                    <br>
                     <div>
                         <div class="grid grid-2">
                             <div class="outline-proj">
@@ -146,28 +150,27 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- <div class="">
-                            <h2>Notizen</h2>
-                            <ul>
-                                <li>Projekte
-                                    <ul>
-                                        <li>Webapplikationen</li>
-                                        <li>Aus- und Weiterbildung</li>
-                                        <li>Projektmanagement</li>
-                                    </ul>
-                                </li>
-                                <br>
-                                <li>Produkte (Kurzer Text + Link)
-                                    <ul>
-                                        <li>Calcoo</li>
-                                        <li>Virtual Training Center (Hier Ein wenig erklären)</li>
-                                        <li>gebäudedaten.ch</li>
-                                        <li>eValo</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="container-parent">
+                <div class="container">
+                    <h2>... unsere Kunden</h2>
+                    <br>
+                    <br>
+                    <div>
+                        <div class="grid grid-2">
+                            <div class="outline-proj">
+                                <h2>Calcoo</h2>
+                                <div class="padding">d</div>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>

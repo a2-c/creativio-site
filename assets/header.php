@@ -18,16 +18,7 @@
                     <ul>
                         <li><a href="index.php" class="">Über Uns</a></li>
                         <span class="nav-divider">|</span>
-                        <li class="dropdown">
-                            <a href="wwm.php" class="flex flex-middle"><span style="">Was wir machen</span>
-                                <ul>
-                                    <li><a href="wwm.php#projekte">Projekte</a></li>
-                                    <li><a href="wwm.php#produkte">Produkte</a></li>
-                                </ul>
-                        </li>
-
-
-
+                        <li class=""><a href="wwm.php" class="flex flex-middle"><span style="">Was wir machen</span></li>
                         <span class="nav-divider">|</span>
                         <li><a href="lehre.php" class="">Lehre</a></li>
                         <span class="nav-divider">|</span>

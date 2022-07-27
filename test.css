@@ -675,3 +675,40 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;}
+
+
+body {
+  background-color: rgb(42, 42, 42) !important;
+}
+
+.display, textarea {
+  padding: 1em;
+  font-size: 2em;
+  font-family: monospace !important;
+  height: 400px;
+  outline: none;
+  border: 0px solid black;
+  width: 100%; 
+  resize: none;
+  position: absolute;
+  margin: 0;
+  background: transparent
+}
+
+.display {
+  color: rgb(216, 216, 216);
+  white-space: pre-wrap;
+}
+
+.keyword {
+  color: rgb(234, 95, 95) !important;
+}
+
+textarea {
+  color: rgba(0, 0, 0, 0);
+  caret-color: #cdcdcd;
+}
+
+.editor {
+  position: relative;
+}

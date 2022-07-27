@@ -10,7 +10,6 @@
 <body>
     <?php include('assets/header.php') ?>
 
-
     <main>
         <div class="container" style="margin-bottom: 8em">
 
@@ -20,7 +19,7 @@
                 <div>
                     <div class="grid grid-2" style="margin-bottom: 2em;">
                         <div>E-Mail: info@a2-c.ch</div>
-                        <div>Telefon: 052 533 66 60</div>
+                        <div style="text-align: right">Telefon: 052 533 66 60</div>
                     </div>
                     <div class="flex flex-center">
                         <form action="void()" class="form">

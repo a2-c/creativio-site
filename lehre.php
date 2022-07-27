@@ -39,9 +39,11 @@
             var spielendPath = 'images/player/play.png'
 
             const songPlaylist = [
-                ['Dion Wanderer', 'wanderer.mp3'],
-                ['Toto - Africa', 'africa.mp3'],
-                ['hello - What is Love', 'love.mp3'],
+                ['Five Stars - Atom Bomb Baby', 'atom bomb baby.mp3', 'https://www.youtube.com/watch?v=6oGGLpl18rs'],
+                ['Dion - The Wanderer', 'the wanderer.mp3', 'https://www.youtube.com/watch?v=SbYa7NBYyRc'],
+                ['Marty Robbins - Big Iron', 'big iron.mp3', 'https://www.youtube.com/watch?v=zzICMIu5zFY'],
+                ['Juan Gabriel - No Tengo Dinero', 'no tengo dinero.mp3', 'https://www.youtube.com/watch?v=SSNSRcpuchw'],
+                ['Danny Kaye - Civilization', 'civilization.mp3', 'https://www.youtube.com/watch?v=b8x0weOPhGc'],
             ];
 
             currentSongIndex = 0;
