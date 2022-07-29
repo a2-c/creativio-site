@@ -9,16 +9,12 @@
     height: 45px;width: 80px">
                     <img src="images/logo/logo.svg">
                 </a>
-<!--                 <a href="index.php" style="display: flex;
-    height: 27px;width: 80px">
-                    <img src="images/logo.svg">
-                </a> -->
 
                 <nav class="largenav">
                     <ul>
                         <li><a href="index.php" class="">Über Uns</a></li>
                         <span class="nav-divider">|</span>
-                        <li class=""><a href="wwm.php" class="flex flex-middle"><span style="">Was wir machen</span></li>
+                        <li class=""><a href="wwm.php">Was wir machen</a></li>
                         <span class="nav-divider">|</span>
                         <li><a href="lehre.php" class="">Lehre</a></li>
                         <span class="nav-divider">|</span>
