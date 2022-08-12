@@ -1,0 +1,51 @@
+.hover-box
+    width: 400px
+    background-color: var(--white)
+    position: absolute
+    top: 0
+    left: 0
+    padding: 1em
+    display: none
+    box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.089)
+    border-radius: 15px
+    pointer-events: none
+    color: var(--dark-blue) !important
+    border: 3px solid var(--dark-blue)
+    font-size: smaller
+
+
+    @media (max-width: 768px)
+        .hover-box
+            position: unset
+            width: 96%
+            border: 0
+            margin: 1em auto
+
+
+    &>* 
+        color: var(--dark-blue) !important
+    
+
+    h2 
+        color: var(--dark-blue) !important
+        margin-top: 0
+        display: inline
+        margin-bottom: 0
+    
+
+    &>*:last-child 
+        margin-bottom: 0
+    
+
+    div 
+        display: flex
+        justify-content: space-between
+
+
+    span 
+        cursor: pointer
+
+
+    img 
+        max-width: 100%
+        border-radius: 15px

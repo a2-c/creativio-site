@@ -1247,6 +1247,86 @@ header nav > ul:hover > * {
   font-weight: bold;
 }
 
+.hover-box {
+  width: 400px;
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  display: none;
+  box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.089);
+  border-radius: 15px;
+  pointer-events: none;
+  color: var(--dark-blue) !important;
+  border: 3px solid var(--dark-blue);
+  font-size: smaller;
+}
+@media (max-width: 768px) {
+  .hover-box .hover-box {
+    position: unset;
+    width: 96%;
+    border: 0;
+    margin: 1em auto;
+  }
+}
+.hover-box > * {
+  color: var(--dark-blue) !important;
+}
+.hover-box h2 {
+  color: var(--dark-blue) !important;
+  margin-top: 0;
+  display: inline;
+  margin-bottom: 0;
+}
+.hover-box > *:last-child {
+  margin-bottom: 0;
+}
+.hover-box div {
+  display: flex;
+  justify-content: space-between;
+}
+.hover-box span {
+  cursor: pointer;
+}
+.hover-box img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+[data-video] .video-panel {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.384);
+  backdrop-filter: blur(5px);
+}
+[data-video] .video-panel iframe {
+  aspect-ratio: 16/9;
+  max-width: 1000px;
+  width: 50%;
+  min-width: 150px;
+  z-index: 3;
+}
+@media (max-width: 768px) {
+  [data-video] .video-panel iframe {
+    width: 100vw;
+  }
+}
+[data-video] img {
+  transition: filter 0.5s ease;
+  filter: brightness(1);
+}
+[data-video] img:hover {
+  cursor: pointer;
+  filter: brightness(0.8);
+}
+
 .bg-light-blue {
   background-color: #d2ebff;
 }
@@ -1469,33 +1549,6 @@ header nav > ul:hover > * {
 .lehreButton span:hover::after {
   margin-left: 10px;
   opacity: 100;
-}
-
-[data-video] .video-panel {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.384);
-  backdrop-filter: blur(5px);
-}
-[data-video] .video-panel iframe {
-  aspect-ratio: 16/9;
-  max-width: 1200px;
-  width: 60%;
-  min-width: 200px;
-}
-[data-video] img {
-  transition: filter 0.5s ease;
-  filter: brightness(1);
-}
-[data-video] img:hover {
-  cursor: pointer;
-  filter: brightness(0.8);
 }
 
 /*# sourceMappingURL=style_v2.css.map */
