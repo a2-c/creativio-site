@@ -1,0 +1,111 @@
+@use 'util-appear.css'
+@use 'settings.css'
+@use 'colors.sass'
+@use 'input.sass'
+    
+    
+
+$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)
+
+$bgColor: #e1ffbe9e
+$childcount: 10
+
+.anforderungen
+    display: grid
+
+    grid-template-columns: repeat(3, 1fr)
+    font-size: 1.5em
+
+    @media (max-width: 1000px)
+        grid-template-columns: repeat(2, 1fr)
+
+    @media (max-width: 800px)
+        grid-template-columns: repeat(1, 1fr)
+
+        text-align: center
+
+    @for $i from 1 to $childcount
+
+        $bgColor: adjust-hue($bgColor, 40)
+
+        > *:nth-child(#{$i})
+            padding: 1em
+            color: #000
+            background-color: $bgColor
+            height: 150px
+            display: flex
+            align-items: center
+            justify-content: center
+
+            transition: background-color 0.5s ease
+
+            &:hover
+                background-color: lighten($bgColor, 10)
+
+.lehreButton
+    background-color: #000
+    text-decoration: none
+
+    min-width: 250px
+    margin-top: 0.5em
+    text-align: center
+
+    display: inline-block
+
+    transition: all 0.5s ease
+
+    span
+        color: #ffffff
+        padding: 1em
+        transition: all 0.5s ease
+        display: inline-block
+
+        &::after
+            content: " →"
+            opacity: 0
+            transition: all 0.5s ease
+            margin-left: -1em
+            font-weight: bold
+
+    span:hover
+        transform: translateX(-10px)
+
+        &::after
+            margin-left: 10px
+            opacity: 100
+
+
+
+
+
+
+
+
+
+[data-video] 
+    .video-panel
+        display: none
+        justify-content: center
+        align-items: center
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(255, 255, 255, 0.384)
+        backdrop-filter: blur(5px)
+    
+        iframe
+            aspect-ratio: 16/9
+            max-width: 1200px
+            width: 60%
+            min-width: 200px
+
+    img 
+        transition: filter 0.5s ease
+        filter: brightness(1)
+
+    img:hover 
+        cursor: pointer
+        filter: brightness(0.8)
+

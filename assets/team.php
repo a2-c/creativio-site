@@ -68,6 +68,17 @@
     <div>
         <div class="t-wrap t-center" itemscope itemtype="http://schema.org/Person">
             <div class="uk-card-media-top">
+                <img src="images/team/gregi.png" alt="" class="uk-width-1-1" itemprop="image">
+            </div>
+            <div class="t-center">
+                <h3 class="team-name" itemprop="name">Gregor Spitzer</h3>
+                <p class="team-title">Webentwickler</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="t-wrap t-center" itemscope itemtype="http://schema.org/Person">
+            <div class="uk-card-media-top">
                 <img src="images/team/kimmo.png" alt="" class="uk-width-1-1" itemprop="image">
             </div>
             <div class="t-center">

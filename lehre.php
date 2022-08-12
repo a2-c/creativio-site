@@ -16,113 +16,7 @@
 <body id="all">
     <?php include('assets/header.php') ?>
 
-    <style>
-
-    </style>
-
-    <div class="lehre-player appear-at-large">
-        <div class="lehre-player-title">
-            <div id="song-title">Song Title</div>
-            <!-- <div>0 / 2:30</div> -->
-        </div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
-        <script>
-            var started = false;
-            var sound;
-
-            var title = document.getElementById('song-title');
-
-            var pausiertText = 'Pausiert'
-            var pausiertPath = 'images/player/Pause.png'
-            var spielendText = '<bold>Spielend</bold>'
-            var spielendPath = 'images/player/play.png'
-
-            const songPlaylist = [
-                ['Five Stars - Atom Bomb Baby', 'atom bomb baby.mp3', 'https://www.youtube.com/watch?v=6oGGLpl18rs'],
-                ['Dion - The Wanderer', 'the wanderer.mp3', 'https://www.youtube.com/watch?v=SbYa7NBYyRc'],
-                ['Marty Robbins - Big Iron', 'big iron.mp3', 'https://www.youtube.com/watch?v=zzICMIu5zFY'],
-                ['Juan Gabriel - No Tengo Dinero', 'no tengo dinero.mp3', 'https://www.youtube.com/watch?v=SSNSRcpuchw'],
-                ['Danny Kaye - Civilization', 'civilization.mp3', 'https://www.youtube.com/watch?v=b8x0weOPhGc'],
-            ];
-
-            currentSongIndex = 0;
-
-            title.innerHTML = songPlaylist[currentSongIndex][0]
-            songpath = "files/audio/" + songPlaylist[currentSongIndex][1]
-
-            sound = new Howl({
-                src: [songpath],
-                volume: 1.0,
-            });
-
-            var seekId;
-            var saveSeek;
-
-            function nextSong(dir = "right") {
-                var button = document.getElementById('pausebutton');
-
-                if (dir == "right") {
-                    currentSongIndex = currentSongIndex + 1
-                } else {
-                    currentSongIndex = currentSongIndex - 1
-                }
-
-                if (currentSongIndex > songPlaylist.length - 1) {
-                    currentSongIndex = 0
-                }
-                if (currentSongIndex == -1) {
-                    currentSongIndex = songPlaylist.length - 1
-                }
-
-                console.log(currentSongIndex)
-                console.log(songPlaylist[currentSongIndex])
-
-                sound.pause()
-                button.setAttribute('state', 'playing')
-                button.setAttribute('src', pausiertPath)
-                button.innerHTML = pausiertText
-
-                title.innerHTML = songPlaylist[currentSongIndex][0]
-                songpath = "files/audio/" + songPlaylist[currentSongIndex][1]
-
-                sound = new Howl({
-                    src: [songpath],
-                    volume: 1.0,
-                });
-                var seekId = sound.play()
-
-                console.log('Seek Id ', seekId);
-            }
-
-            function togglePause() {
-                var button = document.getElementById('pausebutton');
-
-                console.log(button.getAttribute('state'))
-
-                if (button.getAttribute('state') == 'paused') {
-                    button.setAttribute('state', 'playing')
-                    button.setAttribute('src', pausiertPath)
-                    button.innerHTML = spielendText
-                    var seekId = sound.play()
-                    sound.seek(saveSeek, seekId);
-                } else {
-                    button.setAttribute('state', 'paused')
-                    button.setAttribute('src', spielendPath)
-                    button.innerHTML = pausiertText
-                    sound.pause()
-                    saveSeek = sound.seek(seekId);
-                    console.log(saveSeek)
-                }
-            }
-        </script>
-
-        <div class="lehre-player-controls">
-            <img src="images/player/Skip_Rechts.png" width="50" onclick="nextSong('left')">
-            <img src="images/player/play.png" width="50" id="pausebutton" onclick="togglePause()" state="paused">
-            <img src="images/player/Skip_Links.png" width="50" onclick="nextSong()">
-        </div>
-    </div>
+    <?php include('assets/player.php') ?>
 
     <main>
 
@@ -180,9 +74,15 @@
 
         <div class="padding-y bg-grey ">
             <div class="container">
-                <h2>Kimmo Hauri über die Lehre</h2>
+                <h2 class="abbschnitt-titel">Kimmo Hauri über die Lehre</h2>
 
-                <iframe style="width: 100%; aspect-ratio: 16/9" src="https://www.youtube.com/embed/Vi9r-a6FmtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div data-video>
+                    <img src="images/kimmoVideoVorschau.png">
+                    <div class="video-panel">
+                        <iframe style="width: 100%; aspect-ratio: 16/9" src="https://www.youtube.com/embed/Vi9r-a6FmtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -190,17 +90,18 @@
             <div class="container">
                 <div>
                     <div>
-                        <h3>Anforderungen</h3>
-                        <ul>
-                            <li>Kreativität</li>
-                            <li>Organisationstalent</li>
-                            <li>ausgeprägte Teamfähigkeit</li>
-                            <li>Einfühlungsvermögenschnelle Auffassungsgabe</li>
-                            <li>abstrakt-logisches Denken</li>
-                            <li>technisches Verständnis</li>
-                            <li>Kommunikationsfähigkeit</li>
-                            <li>Konzentrationsfähigkeit</li>
-                        </ul>
+                        <h2 class="abbschnitt-titel">Anforderungen</h2>
+                        <div class="anforderungen">
+                            <div>Kreativität</div>
+                            <div>Organisationstalent</div>
+                            <div>ausgeprägte Teamfähigkeit</div>
+                            <div>Einfühlungsvermögenschnelle Auffassungsgabe</div>
+                            <div>abstrakt-logisches Denken</div>
+                            <div>technisches Verständnis</div>
+                            <div>Kommunikationsfähigkeit</div>
+                            <div>Konzentrationsfähigkeit</div>
+                            <div>Englisch Kenntnisse</div>
+                        </div>
                     </div>
                 </div>
                 <script src="js/word-cloud.js"></script>
@@ -214,7 +115,7 @@
             <div class="container">
                 <div>
                     <div>
-                        <h3>Schnupperlehre</h3>
+                        <h2 class="abbschnitt-titel">Schnupperlehre</h2>
                         <p>Falls du mal einen Einblick in den Beruf des Mediamatikers haben willst kannst du uns unter Kontakt mit deinem Anliegen erreichen.</p>
 
                         <div class="grid grid-2">
@@ -226,9 +127,11 @@
                             </div>
                         </div>
 
-                        <p>Weitere Infos zu Beruf des Mediamatikers</p>
-                        <a href="https://biz-sh.ch/?rubrik=biz_detail&lang=1&SWISSDOK_NR_AD=0561130" target="_blank">BIZ Schaffhausen</a><br>
-                        <a href="https://www.berufsberatung.ch/dyn/show/1900?lang=de&idx=30&id=4034" target="_blank">Berufsberatung</a>
+                        <p>Weitere Infos zu Beruf des Mediamatikers ...</p>
+                        <div class="grid grid-2">
+                            <a class="lehreButton" href="https://biz-sh.ch/?rubrik=biz_detail&lang=1&SWISSDOK_NR_AD=0561130" target="_blank"><span>BIZ Schaffhausen</span></a><br>
+                            <a class="lehreButton" href="https://www.berufsberatung.ch/dyn/show/1900?lang=de&idx=30&id=4034" target="_blank"><span>Berufsberatung</span></a>
+                        </div>
                     </div>
                 </div>
             </div>

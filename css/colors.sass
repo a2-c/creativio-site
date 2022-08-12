@@ -1,0 +1,27 @@
+$light-blue: #d2ebff
+$dark-blue: #003057
+$white: #ffffff
+$grey: #eaeaea
+$dark-grey: #1f1f1f
+$dark-grey-font: #5e5e5e
+$black: #000000
+
+$color-values: $light-blue, $dark-blue, $white, $grey, $dark-grey, $dark-grey-font, $black
+$color-names: 'light-blue', 'dark-blue', 'white', 'grey', 'dark-grey', 'dark-grey-font', 'black'
+$colors: zip($color-values, $color-names)
+    
+    
+@each $value, $name in $colors
+
+    .bg-#{$name}
+        background-color: $value
+    
+    
+    .t-color-#{$name}
+        color: $value
+
+
+.bg-dark-blue
+    
+    &::selection
+        background-color: white

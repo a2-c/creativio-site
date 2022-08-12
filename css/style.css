@@ -1,30 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-:root {
-    --light-blue: #d2ebff;
-    --dark-blue: #003057;
-    --white: #ffffff;
-    --grey: #eaeaea;
-    --dark-grey: #1f1f1f;
-    --dark-grey-font: #5e5e5e;
-    --black: #000000;
-}
 
-/* @media (prefers-color-scheme: dark) {
-    :root {
-        --light-blue: #d2ebff;
-        --dark-blue: #0060ae;
-        --white: #171717;
-        --grey: #424242;
-        --dark-grey: #1f1f1f;
-        --dark-grey-font: #a0a0a0;
-        --black: #000000;
-    }
-  } */
 
-html {
-    scroll-behavior: smooth;
-}
 
 .bild {
     background-image: url("https://www.kammgarn-west.ch/wp-content/uploads/2019/04/eingangsbereich_dsc2946-2100x900-c-default.jpg");
@@ -32,48 +8,6 @@ html {
     background-position: center;
 }
 
-* {
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    color: var(--dark-grey-font);
-}
-
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    background-color: var(--white);
-}
-
-main {
-    flex-grow: 1;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    color: var(--black);
-}
-
-body::-webkit-scrollbar {
-    width: 12px;
-    /* width of the entire scrollbar */
-}
-
-body::-webkit-scrollbar-track {
-    background: rgb(238, 238, 238);
-    /* color of the tracking area */
-    padding: 10px;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: rgb(189, 189, 189);
-    padding: 1em;
-}
 
 .heroshot {
     min-height: 93vh;
@@ -90,10 +24,6 @@ body::-webkit-scrollbar-thumb {
 .abbschnitt-titel {
     font-size: 40px;
     margin-bottom: 1.5em;
-}
-
-h3 {
-    font-size: 27px;
 }
 
 .team-name {
@@ -123,40 +53,17 @@ h3 {
 }
 
 .grid-2 {
-    grid-template-columns: repeat(auto-fill, 45%);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10%
 }
 
 .grid-3 {
-    grid-template-columns: repeat(auto-fill, 26%);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10%
 }
 
 
-/* BACKGROUND */
-.bg-grey {
-    background-color: var(--grey)
-}
 
-.bg-white {
-    background-color: var(--white)
-}
-
-.bg-dark-blue {
-    background-color: var(--dark-blue)
-}
-
-.bg-light-blue {
-    background-color: var(--light-blue)
-}
-
-.bg-black {
-    background-color: var(--black)
-}
-
-.bg-dark-grey {
-    background-color: var(--dark-grey)
-}
 
 
 /* TEXT */
@@ -182,30 +89,6 @@ h3 {
 
 .t-large {
     font-size: xx-large;
-}
-
-.t-small {
-    font-size: small;
-}
-
-.t-color-red {
-    color: red
-}
-
-.t-color-white {
-    color: var(--white)
-}
-
-.t-color-black {
-    color: var(--black)
-}
-
-.t-color-blue {
-    color: var(--dark-blue)
-}
-
-.t-color-light-blue {
-    color: var(--light-blue)
 }
 
 /* Margin */
@@ -272,7 +155,6 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: var(--white);
-    /* border-bottom: 1px solid black; */
 
     padding: 0.3em 0em;
     position: sticky;
@@ -331,25 +213,6 @@ nav>ul:hover>* {
     border-width: 0;
 }
 
-
-
-/* DROPDWON */
-.dropdown>ul {
-    visibility: hidden;
-    position: absolute;
-    padding-top: 1em;
-    list-style: none;
-}
-
-.dropdown:hover>ul {
-    visibility: visible;
-}
-
-.dropdown:hover>ul>li {
-    background-color: var(--black);
-    margin-bottom: 0.5em;
-    padding: 0.5em;
-}
 
 .team-container {
     display: grid;
@@ -552,11 +415,6 @@ nav>ul:hover>* {
     }
 }
 
-::selection {
-    background-color: var(--dark-blue);
-    color: var(--white);
-}
-
 .hover-box {
     width: 400px;
     background-color: var(--white);
@@ -634,53 +492,6 @@ nav>ul:hover>* {
         border-radius: 15px;
     }
 
-    input[type="submit"]:hover, .button:hover {
-        cursor: pointer;
-        opacity: 0.9;
-    }
-    
-    input[type="submit"], .button {
-        text-transform: uppercase;
-        text-decoration: none;
-        width: 130px;
-        padding: 1em;
-        background-color: var(--dark-blue);
-        color: var(--white)
-    }
-
-
-
-
-
-
-
-    input {
-        border: none;
-        background-color: var(--grey);
-        padding: 1em
-    }
-
-    input[type="submit"]:focus {
-
-        border: 1px solid red
-    }
-
-    .pillgroup {
-        display: flex;
-    }
-
-    .pillgroup-expand {
-        flex-grow: 1;
-    }
-
-    .pillgroup>*:first-child {
-        border-radius: 999px 0 0 999px;
-    }
-
-    .pillgroup>*:last-child {
-        border-radius: 0 999px 999px 0;
-    }
-
     .lehre-player {
         position: fixed;
         top: 10%;
@@ -724,216 +535,4 @@ nav>ul:hover>* {
         margin-bottom: 1em;
         text-align: center;
         font-weight: bold;
-        /* font-size: 1.2em; */
-    }
-
-
-
-    #martinVideoVorschau:hover {
-        transition: filter 0.5s ease;
-        filter: brightness(1);
-    }
-
-    #martinVideoVorschau:hover {
-        cursor: pointer;
-        filter: brightness(0.8);
-    }
-
-    .martinvideo {
-        background-color: rgba(255, 255, 255, 0.384);
-        backdrop-filter: blur(5px);
-        width: 100%;
-        height: 100%;
-
-        position: fixed;
-        top: 0px;
-        left: 0px;
-
-        display: none;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .martinvideo-panel {
-        /* background-color: rgb(76, 76, 76); */
-        aspect-ratio: 16/9;
-        width: clamp(400px, 66%, 1400px);
-    }
-
-    .martinvideo-panel iframe {
-        width: 100%;
-        height: 100%;
-    }
-
-    .triangle {
-        width: 0px;
-        height: 0px;
-        border-style: solid;
-        border-width: 36px 0 36px 56px;
-        border-color: transparent transparent transparent #ffffff;
-        transform: rotate(0deg);
-    }
-
-    @media (min-width: 600px) {
-        .switch-at-small>*:first-child {
-            display: none;
-        }
-
-        .switch-at-small>*:last-child {
-            display: unset;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .switch-at-small>*:first-child {
-            display: unset;
-        }
-
-        .switch-at-small>*:last-child {
-            display: none;
-        }
-    }
-
-    .appear-at-small {
-        display: none;
-    }
-
-    @media (min-width: 600px) {
-        .appear-at-small {
-            display: unset;
-        }
-    }
-
-    .hide-at-small {
-        display: unset;
-    }
-
-    @media (min-width: 600px) {
-        .hide-at-small {
-            display: none;
-        }
-    }
-
-    /* Switch at class */
-    @media (min-width: 768px) {
-        .switch-at-medium>*:first-child {
-            display: none;
-        }
-
-        .switch-at-medium>*:last-child {
-            display: unset;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .switch-at-medium>*:first-child {
-            display: unset;
-        }
-
-        .switch-at-medium>*:last-child {
-            display: none;
-        }
-    }
-
-    .appear-at-medium {
-        display: none;
-    }
-
-    @media (min-width: 768px) {
-        .appear-at-medium {
-            display: unset;
-        }
-    }
-
-    .hide-at-medium {
-        display: unset;
-    }
-
-    @media (min-width: 768px) {
-        .hide-at-medium {
-            display: none;
-        }
-
-    }
-
-    /* Switch at class */
-    @media (min-width: 992px) {
-        .switch-at-large>*:first-child {
-            display: none;
-        }
-
-        .switch-at-large>*:last-child {
-            display: unset;
-        }
-    }
-
-    @media (max-width: 992px) {
-        .switch-at-large>*:first-child {
-            display: unset;
-        }
-
-        .switch-at-large>*:last-child {
-            display: none;
-        }
-    }
-
-    .appear-at-large {
-        display: none;
-    }
-
-    @media (min-width: 992px) {
-        .appear-at-large {
-            display: unset;
-        }
-    }
-
-    .hide-at-large {
-        display: unset;
-    }
-
-    @media (min-width: 992px) {
-        .hide-at-large {
-            display: none;
-        }
-    }
-
-    /* Switch at class */
-    @media (min-width: 1200px) {
-        .switch-at-xlarge>*:first-child {
-            display: none;
-        }
-
-        .switch-at-xlarge>*:last-child {
-            display: unset;
-        }
-    }
-
-    @media (max-width: 1200px) {
-        .switch-at-xlarge>*:first-child {
-            display: unset;
-        }
-
-        .switch-at-xlarge>*:last-child {
-            display: none;
-        }
-    }
-
-    .appear-at-xlarge {
-        display: none;
-    }
-
-    @media (min-width: 1200px) {
-        .appear-at-xlarge {
-            display: unset;
-        }
-    }
-
-    .hide-at-xlarge {
-        display: unset;
-    }
-
-    @media (min-width: 1200px) {
-        .hide-at-xlarge {
-            display: none;
-        }
     }

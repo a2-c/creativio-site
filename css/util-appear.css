@@ -1,0 +1,163 @@
+@media (min-width: 600px) {
+    .switch-at-small>*:first-child {
+        display: none;
+    }
+
+    .switch-at-small>*:last-child {
+        display: unset;
+    }
+}
+
+@media (max-width: 600px) {
+    .switch-at-small>*:first-child {
+        display: unset;
+    }
+
+    .switch-at-small>*:last-child {
+        display: none;
+    }
+}
+
+.appear-at-small {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .appear-at-small {
+        display: unset;
+    }
+}
+
+.hide-at-small {
+    display: unset;
+}
+
+@media (min-width: 600px) {
+    .hide-at-small {
+        display: none;
+    }
+}
+
+/* Switch at class */
+@media (min-width: 768px) {
+    .switch-at-medium>*:first-child {
+        display: none;
+    }
+
+    .switch-at-medium>*:last-child {
+        display: unset;
+    }
+}
+
+@media (max-width: 768px) {
+    .switch-at-medium>*:first-child {
+        display: unset;
+    }
+
+    .switch-at-medium>*:last-child {
+        display: none;
+    }
+}
+
+.appear-at-medium {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .appear-at-medium {
+        display: unset;
+    }
+}
+
+.hide-at-medium {
+    display: unset;
+}
+
+@media (min-width: 768px) {
+    .hide-at-medium {
+        display: none;
+    }
+
+}
+
+/* Switch at class */
+@media (min-width: 992px) {
+    .switch-at-large>*:first-child {
+        display: none;
+    }
+
+    .switch-at-large>*:last-child {
+        display: unset;
+    }
+}
+
+@media (max-width: 992px) {
+    .switch-at-large>*:first-child {
+        display: unset;
+    }
+
+    .switch-at-large>*:last-child {
+        display: none;
+    }
+}
+
+.appear-at-large {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .appear-at-large {
+        display: unset;
+    }
+}
+
+.hide-at-large {
+    display: unset;
+}
+
+@media (min-width: 992px) {
+    .hide-at-large {
+        display: none;
+    }
+}
+
+/* Switch at class */
+@media (min-width: 1200px) {
+    .switch-at-xlarge>*:first-child {
+        display: none;
+    }
+
+    .switch-at-xlarge>*:last-child {
+        display: unset;
+    }
+}
+
+@media (max-width: 1200px) {
+    .switch-at-xlarge>*:first-child {
+        display: unset;
+    }
+
+    .switch-at-xlarge>*:last-child {
+        display: none;
+    }
+}
+
+.appear-at-xlarge {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .appear-at-xlarge {
+        display: unset;
+    }
+}
+
+.hide-at-xlarge {
+    display: unset;
+}
+
+@media (min-width: 1200px) {
+    .hide-at-xlarge {
+        display: none;
+    }
+}

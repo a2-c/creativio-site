@@ -30,7 +30,9 @@
                 <div class="grid grid-2 flex-middle padding-y">
 
                     <div class="">
-                        <p class="ideenschmiede">Wir verstehen uns als <span class="t-color-blue">Ideenschmiede</span> für individuelle Lösungen in den Bereichen ...</p>
+                        <p class="ideenschmiede" style="display: flex;
+    flex-direction: column;
+    justify-content: center; height: 100%">Wir verstehen uns als <span class="t-color-blue">Ideenschmiede</span> für individuelle Lösungen in den Bereichen ...</p>
                     </div>
 
                     <div>
@@ -62,8 +64,11 @@
             <div class="container">
                 <div class="grid grid-2 flex-middle">
                     <div>
-                        <div>
-                            <img src="images/martinVideoVorschau.png" alt="martinVideoVorschau" id="martinVideoVorschau" style="width: 100%" onclick="showvideo()">
+                        <div data-video>
+                            <img src="images/martinVideoVorschau.png">
+                            <div class="video-panel">
+                                <iframe src="https://www.youtube.com/embed/0e3Zko031RE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="martinVid"></iframe>
+                            </div>
                         </div>
                         <div class="t-center">
                             <b>Martin Ahrend über die a2-c</b>
@@ -80,21 +85,6 @@
                     </div>
                 </div>
             </div>
-            <div class="martinvideo" id="martinvideo" onclick="hidevideo()">
-                <div class="martinvideo-panel">
-                    <iframe style="width: 100%; height: 100%" src="https://www.youtube.com/embed/0e3Zko031RE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-            <script>
-                function showvideo() {
-                    document.getElementById('martinvideo').style.display = 'flex';
-                    document.body.style.overflow = "hidden"
-                }
-                function hidevideo() {
-                    document.getElementById('martinvideo').style.display = 'none'
-                    document.body.style.overflow = "unset"
-                }
-            </script>
         </div>
 
 
@@ -111,9 +101,6 @@
 
         <div class="bg-grey margin-y padding-y">
             <div class="container">
-
-                <!-- <p class="t-color-red">INCLUDE JS FROM OLDE SITE</p> -->
-
                 <h2 class="abbschnitt-titel">Unser Weg</h2>
 
                 <?php include('assets/timeline.php') ?>
@@ -139,7 +126,7 @@
                     <div>
                         <p><span class="bold t-color-black" id="lehrlinge" style="font-size: 2em; margin-right: 0.5em">0</span> Lehrlinge ausgebildet</p>
                     </div>
-<!--                     <div>
+                    <!--                     <div>
                         <p><span class="bold t-color-black" id="lehrlinge" style="font-size: 2em;">52</span> Glückliche Kunden</p>
                     </div> -->
                     <br>
