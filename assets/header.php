@@ -7,7 +7,7 @@
             <header>
                 <a href="index.php" style="display: flex;
     height: 45px;width: 80px">
-                    <img src="images/logo/logo.svg">
+                    <img src="images/logo/logo1.svg">
                 </a>
 
                 <nav class="largenav">

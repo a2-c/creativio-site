@@ -1,11 +1,14 @@
 @use 'util-appear.css'
-@use 'settings.css'
+@use 'settings.sass'
 @use 'colors.sass'
 @use 'input.sass'
-    
-    
+@use 'marpad.sass'
+@use 'header.sass'
 
-$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)
+@use 'components/player.sass'
+
+@import 'colors.sass'
+    
 
 $bgColor: #e1ffbe9e
 $childcount: 10
@@ -43,7 +46,7 @@ $childcount: 10
                 background-color: lighten($bgColor, 10)
 
 .lehreButton
-    background-color: #000
+    background-color: $dark-grey-font
     text-decoration: none
 
     min-width: 250px

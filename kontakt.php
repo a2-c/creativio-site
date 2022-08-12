@@ -36,7 +36,7 @@
 
                             <div class="inputGroup">
                                 <textarea name="message" cols="30" rows="10" required></textarea>
-                                <label for="fas">Name</label>
+                                <label >Nachricht</label>
                             </div>
 
                             <input type="submit" value="Senden" class="button">

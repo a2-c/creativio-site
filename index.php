@@ -16,7 +16,7 @@
         <div>
             <div class="container-parent bild">
                 <div class="t-color-grey container heroshot">
-                    <img src="images/logo/logo.svg" width="120" alt="">
+                    <img src="images/logo/logo1.svg" width="120" alt="">
                     <!-- <h1 class="bold">a2-c</h1> -->
                     <h3 style="font-weight: 100">Vom ersten Gedankensplitter <br> bis zur fertigen Lösung</h3>
                 </div>
@@ -67,7 +67,7 @@
                         <div data-video>
                             <img src="images/martinVideoVorschau.png">
                             <div class="video-panel">
-                                <iframe src="https://www.youtube.com/embed/0e3Zko031RE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="martinVid"></iframe>
+                                <iframe src="https://www.youtube.com/embed/0e3Zko031RE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="t-center">
