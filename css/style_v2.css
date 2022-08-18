@@ -174,16 +174,20 @@ h5 {
   color: var(--black);
 }
 
-body::-webkit-scrollbar {
+h3 {
+  font-size: xx-large;
+}
+
+::-webkit-scrollbar {
   width: 12px;
 }
 
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: rgb(238, 238, 238);
   padding: 10px;
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: rgb(189, 189, 189);
   padding: 1em;
 }
@@ -195,6 +199,20 @@ body::-webkit-scrollbar-thumb {
 
 img {
   max-width: 100%;
+}
+
+.reset-link {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.link-light {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.u-hover:hover {
+  text-decoration: underline;
 }
 
 .bg-light-blue {
@@ -323,6 +341,7 @@ img {
   text-transform: uppercase;
   padding: 1em;
   text-decoration: none;
+  font-family: inherit;
   border: none;
 }
 .button:hover {
@@ -336,12 +355,12 @@ img {
 }
 
 .inputGroup input, .inputGroup textarea {
+  font-family: inherit;
   font-size: 100%;
   padding: 0.8em;
   outline: none;
   border: 2px solid #eaeaea;
   background-color: transparent;
-  /* border-radius: 20px */
   width: 100%;
   resize: none;
 }
@@ -363,6 +382,19 @@ img {
   margin-left: 1.3em;
   padding: 0.4em;
   background-color: #ffffff;
+  border-color: #eaeaea;
+}
+
+.inputGroup input:invalid[type=email] ~ label {
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #ffffff;
+  transform: translateY(-50%) scale(0.9);
+}
+
+.inputGroup input:invalid[type=email] {
+  border-color: #ffd4d4;
 }
 
 .inputGroup :is(input:focus, input:valid, textarea:focus, textarea:valid) {
@@ -1197,8 +1229,8 @@ header nav > ul li a * {
 }
 header nav > ul > li > a:hover *,
 header nav > ul > li > a:hover {
-  color: var(--dark-grey-font) !important;
-  fill: var(--dark-grey-font) !important;
+  color: var(--dark-grey-font);
+  fill: var(--dark-grey-font);
 }
 header nav > ul:hover > li > a,
 header nav > ul:hover > * *,
@@ -1258,12 +1290,12 @@ header nav > ul:hover > * {
   box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.089);
   border-radius: 15px;
   pointer-events: none;
-  color: var(--dark-blue) !important;
+  color: var(--dark-blue);
   border: 3px solid var(--dark-blue);
   font-size: smaller;
 }
 @media (max-width: 768px) {
-  .hover-box .hover-box {
+  .hover-box {
     position: unset;
     width: 96%;
     border: 0;
@@ -1271,10 +1303,10 @@ header nav > ul:hover > * {
   }
 }
 .hover-box > * {
-  color: var(--dark-blue) !important;
+  color: var(--dark-blue);
 }
 .hover-box h2 {
-  color: var(--dark-blue) !important;
+  color: var(--dark-blue);
   margin-top: 0;
   display: inline;
   margin-bottom: 0;
@@ -1325,6 +1357,73 @@ header nav > ul:hover > * {
 [data-video] img:hover {
   cursor: pointer;
   filter: brightness(0.8);
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em 2em;
+}
+
+.outline-proj {
+  border: 3px solid #eaeaea;
+  position: relative;
+}
+
+.outline-proj h2 {
+  position: absolute;
+  margin: 0;
+  left: 30px;
+  top: -32px;
+  background-color: var(--white);
+  padding: 0.5em;
+  color: var(--dark-grey-font);
+}
+
+.timeline {
+  height: 500px;
+  overflow: auto;
+  padding: 2em;
+  box-shadow: 0 0 35px 5px rgba(117, 117, 117, 0.1019607843);
+  background: rgb(0, 160, 255);
+  background: linear-gradient(357deg, rgba(0, 160, 255, 0) 0%, rgb(255, 255, 255) 100%);
+}
+.timeline > div > div {
+  opacity: 0.5;
+  margin-bottom: 2em;
+  transition: opacity 0.2s ease-in-out;
+}
+.timeline > div > div:hover {
+  opacity: 1;
+}
+.timeline > div > div p, .timeline > div > div h3 {
+  margin: 0;
+  text-align: center;
+  max-width: 45ch;
+  margin: 0 auto;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6%;
+}
+.team-container > * {
+  background-color: var(--grey);
+  margin-bottom: 1em;
+}
+.team-container img {
+  width: 100%;
+}
+.team-container .team-name {
+  font-size: 20px;
+  margin-bottom: 0.1em;
+  margin-top: 0.9em;
+}
+.team-container .team-title {
+  margin-bottom: 1.3em;
+  margin-top: 0.1em;
 }
 
 .bg-light-blue {
@@ -1549,6 +1648,12 @@ header nav > ul:hover > * {
 .lehreButton span:hover::after {
   margin-left: 10px;
   opacity: 100;
+}
+
+.abbschnitt-titel {
+  font-size: 40px;
+  margin-bottom: 1em;
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=style_v2.css.map */

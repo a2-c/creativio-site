@@ -15,10 +15,12 @@
         <!-- Hero Shot -->
         <div>
             <div class="container-parent bild">
-                <div class="t-color-grey container heroshot pt-4">
-                    <img src="images/logo/logo1.svg" width="120" alt="">
-                    <!-- <h1 class="bold">a2-c</h1> -->
-                    <h3 style="font-weight: 100">Vom ersten Gedankensplitter <br> bis zur fertigen Lösung</h3>
+                <div class="container heroshot pt-4">
+
+                    <span>
+                        <img src="images/logo/logo1.svg" width="120" alt="">
+                        <h3>Vom ersten Gedankensplitter <br> bis zur fertigen Lösung</h3>
+                    </span>
                 </div>
             </div>
         </div>
@@ -94,7 +96,7 @@
                 <div class="container">
 
                     <h2 class="abbschnitt-titel">Unser Team</h2>
-                    <p style="margin-bottom: 3em; max-width: 730px;">Unser Team setzt sich aus den Bereichen bla bal bla, bla bla und bla bla zusammen und wir verstehen uns miteinander genau so gut wie mit der Technik. Dies ist seit Jahren ein Erfolgsrezept für eine Angenehme und wirkungsvolle zusammenarbeit. Wir Freuen uns immer darauf neue Mitarbeiter zu begrüssen.</p>
+                    <p style="margin-bottom: 3em; max-width: 730px;">Unser Team setzt sich aus Fachleuten unterschiedlicher Ausrichtung, Ausbildung und Erfahrung zusammen. Seit 2004 ist dies die erfolgreiche Grundlage für ein ideenreiches und zielgerichtetes Arbeiten mit und für unsere Kunden. Innerhalb des Teams können wir auf Know-How in Aus- und Weiterbildung, Hochschullehre, Projektmanagement, Customer Relationship Management, Unternehmensstrategie, Informatik und Medien zurückgreifen.</p>
 
                     <?php include('assets/team.php') ?>
 
@@ -105,7 +107,7 @@
                 <div class="container">
                     <h2 class="abbschnitt-titel">Unser Weg</h2>
 
-                    <?php include('assets/timeline.php') ?>
+                    <?php include('assets/timeline_v2.php') ?>
 
                 </div>
             </div>
@@ -137,40 +139,35 @@
     <?php include('assets/footer.php') ?>
 
     <script>
-        $(window).on('resize', function() {
+        const imageUrls = [
+            ["images/heroshotbilder/DSC00767.JPG", 'grayscale(50%)'],
+            ["images/heroshotbilder/DSC00799.JPG", 'grayscale(50%)'],
+            ["images/heroshotbilder/DSC00919.JPG", 'grayscale(50%)'],
+            ["images/heroshotbilder/DSC09530.JPG", 'grayscale(50%)'],
+            ["images/heroshotbilder/DSC09971.JPG", 'grayscale(50%)'],
+            ["images/heroshotbilder/DSC00705.JPG", 'grayscale(50%)'],
+            /* ["images/heroshotbilder/DSC00724.JPG", 'grayscale(50%)'], */
+            ["images/heroshotbilder/DSC00762.JPG", 'grayscale(50%)'],
+        ]
 
+        let index = 0
 
-            var timeline = $('.timeline')
-            if ($(window).width() >= 960) {
-                timeline.css('overflow', 'auto')
-                timeline.css('height', '630px')
-            } else {
-                timeline.css('overflow', 'hidden')
-            }
+        changeBG()
 
-            var timeline_height = $('#timeline_box').css('height');
+        window.setInterval(changeBG, 5000)
 
-            $('#timeline_strich').height(timeline_height);
-            $('#timeline_strich').css('margin-bottom', '-' + timeline_height);
-        });
+        function changeBG() {
+            console.log(imageUrls[index]);
 
-        function show_more() {
-            var btn = $('#timeline_show_more_btn');
-            var timeline = $('.timeline')
-            console.log(btn.text().toUpperCase());
+            document.querySelector('.bild')
+            .style.backgroundImage = `url(${imageUrls[index][0]})`;
+/*  
+            document.querySelector('.bild')
+            .style.filter = imageUrls[index][1]; */
 
-            var state = btn.text().toUpperCase();
+            index++
 
-            if (state == 'MEHR ZUR GESCHICHTE') {
-                btn.text('Weniger')
-                timeline.css('overflow', 'visible')
-                timeline.css('height', '100%')
-            }
-            if (state == 'WENIGER') {
-                btn.text('MEHR ZUR GESCHICHTE')
-                timeline.css('overflow', 'hidden')
-                timeline.css('height', '630px')
-            }
+            index = index == imageUrls.length ? 0 : index
         }
     </script>
 

@@ -88,15 +88,7 @@
         </div>
     </div>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="">
+<div class="mt-5">
 
     <h3>Lehrlinge</h3>
     <div class="team-container ">

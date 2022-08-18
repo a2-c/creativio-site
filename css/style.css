@@ -3,39 +3,25 @@
 
 
 .bild {
-    background-image: url("https://www.kammgarn-west.ch/wp-content/uploads/2019/04/eingangsbereich_dsc2946-2100x900-c-default.jpg");
+    transition: background-image 0.6s ease;
     background-size: cover;
     background-position: center;
+    filter: grayscale(50%);
 }
 
 
 .heroshot {
     min-height: 93vh;
-    font-size: 2em !important;
+    font-size: 2em ;
+}
+
+.heroshot span {
+    padding: 0.5em;
+    display: inline-block;
+    backdrop-filter: blur(5px);
 }
 
 
-.smallsvg {
-    height: 15px;
-}
-
-
-
-.abbschnitt-titel {
-    font-size: 40px;
-    margin-bottom: 1.5em;
-}
-
-.team-name {
-    font-size: 20px;
-    margin-bottom: 0.1em;
-    margin-top: 0.9em;
-}
-
-.team-title {
-    margin-bottom: 1.3em;
-    margin-top: 0.1em;
-}
 
 .ideenschmiede {
     font-size: 30px;
@@ -91,76 +77,8 @@
     font-size: xx-large;
 }
 
-/* Margin */
-/* .margin-remove {
-    margin: 0
-}
-
-.margin-y {
-    margin: 3em 0em
-}
-
-.margin-x {
-    margin: 0em 3em
-}
 
 
-.padding-y {
-    padding: 3em 0em
-}
-
-.padding {
-    padding: 3em
-}
-
-.padding-remove {
-    padding: 0 !important
-} */
-
-
-.container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-
-    padding: 2em 2em;
-}
-
-
-
-
-/* LINKS */
-.reset-link {
-    color: var(--black);
-    text-decoration: none
-}
-
-.link-light {
-    color: var(--white);
-    text-decoration: none
-}
-
-.u-hover:hover {
-    text-decoration: underline
-}
-
-
-
-
-.team-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 6%
-}
-
-.team-container>* {
-    background-color: var(--grey);
-    margin-bottom: 1em;
-}
-
-.team-container img {
-    width: 100%
-}
 
 
 .lehre-blob {
@@ -179,53 +97,6 @@
     height: 93vh;
     padding-top: 5em;
     max-width: 100%;
-}
-
-
-
-.outline-proj {
-    border: 3px solid #eaeaea;
-    position: relative;
-}
-
-.outline-proj h2 {
-    position: absolute;
-    margin: 0;
-    left: 30px;
-    top: -32px;
-    background-color: var(--white);
-    padding: 0.5em;
-    color: var(--dark-grey-font)
-}
-
-
-.detail {
-    display: flex;
-}
-
-.detail .detail-bilder {
-    width: 30%;
-}
-
-.detail .detail-bilder img {
-    width: 100%;
-}
-
-.detail .detail-text {
-    width: 65%;
-}
-
-.detail>*:last-child {
-    margin-left: 5%
-}
-
-.detail-list-container {
-    background-color: var(--light-blue);
-    padding: 2em;
-}
-
-.detail-list {
-    margin-top: 2em
 }
 
 .smallnav {
@@ -293,8 +164,8 @@
     }
 
     .detail>* {
-        width: 100% !important;
-        margin-left: 0 !important;
+        width: 100% ;
+        margin-left: 0 ;
         margin-bottom: 3em;
     }
 
@@ -312,8 +183,9 @@
     }
 
     footer,
-    .t-right {
-        text-align: left !important;
+    .t-right,
+    .grid-2{
+        text-align: left;
     }
 }
 
@@ -340,7 +212,7 @@
         height: unset
     }
     .lehre-blob svg {
-        height: unset !important;
+        height: unset ;
         padding: 0
     }
     .blob-small svg {

@@ -57,29 +57,28 @@
         </div>
 
         <div class="child-pt-3 child-pb-3">
-
             <div class="">
                 <div class="container">
                     <h2>Ausbildungsplatz: Mediamatiker</h2>
 
-                    <div class="detail">
-                        <div class="detail-text">
+                    <div class="grid-2 grid">
+                        <div class="">
                             <p>Zurzeit haben wir keine offenen Ausbildungsplätze als Mediamatiker.</p>
                             <p>Seit nun mehr als 15 Jahren, können junge Menschen bei der a2-c AG eine Lehre als Mediamatiker anstreben. Die vierjährige Lehre bringt gemeinsam mit der Maturität einen guten Start ins Berufsleben und viele Möglichkeiten für deinen weiterführenden Weg. Vom Webentwickler bis zum Marketingmanager stehen dir nach der Lehre alle Türen offen. Als Allrounder wird man Sich viele Fähigkeiten in den Bereichen Administration, Buchhaltung, Marketing und Informatik aneignen. Wenn du dich also für das Aufbereiten von Informationen und das Mitwirken an komplexen Projekten interessierst, dann bist du bei uns genau richtig!</p>
                         </div>
-                        <div class="detail-bilder">
-                            <img src="images/lehre/lehre-maxim.jpg" style="filter: brightness(1.5); border-radius: 15px" alt="bild" width="150">
+                        <div>
+                            <img src="images/lehre/lehre-maxim.jpg" style="filter: brightness(1.5); border-radius: 15px; width: 100%" alt="bild" width="150">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class=" bg-grey ">
+            <div class="bg-grey">
                 <div class="container">
                     <h2 class="abbschnitt-titel">Kimmo Hauri über die Lehre</h2>
 
                     <div data-video>
-                        <img src="images/kimmoVideoVorschau.png">
+                        <img src="images/kimmoVideoVorschau.png" style="width: 100%">
                         <div class="video-panel">
                             <iframe style="width: 100%; aspect-ratio: 16/9" src="https://www.youtube.com/embed/Vi9r-a6FmtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
@@ -97,12 +96,12 @@
                                 <div>Kreativität</div>
                                 <div>Organisationstalent</div>
                                 <div>ausgeprägte Teamfähigkeit</div>
-                                <div>Einfühlungsvermögenschnelle Auffassungsgabe</div>
+                                <div>Einfühlungsvermögen</div>
                                 <div>abstrakt-logisches Denken</div>
                                 <div>technisches Verständnis</div>
                                 <div>Kommunikationsfähigkeit</div>
                                 <div>Konzentrationsfähigkeit</div>
-                                <div>Englisch Kenntnisse</div>
+                                <div>schnelle Auffassungsgabe</div>
                             </div>
                         </div>
                     </div>
@@ -119,19 +118,11 @@
                         <div>
                             <h2 class="abbschnitt-titel">Schnupperlehre</h2>
                             <p>Falls du mal einen Einblick in den Beruf des Mediamatikers haben willst kannst du uns unter Kontakt mit deinem Anliegen erreichen.</p>
-
-                            <div class="grid grid-2">
-                                <div>
-                                    <h4>Zwei Tage</h4>
-                                </div>
-                                <div>
-                                    <h4>Ein Tag</h4>
-                                </div>
-                            </div>
+                            <p class="">Wir bieten ein tägige Orientierungsschnupperlehren und 2 tägige Bewerbungsschnupperlehren an.</p>
 
                             <p>Weitere Infos zu Beruf des Mediamatikers ...</p>
-                            <div class="grid grid-2">
-                                <a class="lehreButton" href="https://biz-sh.ch/?rubrik=biz_detail&lang=1&SWISSDOK_NR_AD=0561130" target="_blank"><span>BIZ Schaffhausen</span></a><br>
+                            <div class="grid">
+                                <a class="lehreButton" href="https://biz-sh.ch/?rubrik=biz_&lang=1&SWISSDOK_NR_AD=0561130" target="_blank"><span>BIZ Schaffhausen</span></a><br>
                                 <a class="lehreButton" href="https://www.berufsberatung.ch/dyn/show/1900?lang=de&idx=30&id=4034" target="_blank"><span>Berufsberatung</span></a>
                             </div>
                         </div>

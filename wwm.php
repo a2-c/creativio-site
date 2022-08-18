@@ -15,17 +15,13 @@
             <div class="container-parent">
                 <div class="container">
                     <div class="">
-                        <br>
-                        <h1 class="m-0">Was wir machen zeichnet sich aus durch ...</h1>
+                        <h1 class="m-0 mt-1 mb-1">Was wir machen zeichnet sich aus durch ...</h1>
                     </div>
                 </div>
             </div>
-            <br>
             <div class="container-parent">
                 <div class="container">
-                    <h2>... unsere Produkte</h2>
-                    <br>
-                    <br>
+                    <h2 class="mb-2">... unsere Produkte</h2>
                     <div>
                         <div class="grid grid-2 child-p-3">
                             <div class="outline-proj">
