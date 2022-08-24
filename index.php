@@ -13,22 +13,20 @@
 
     <main>
         <!-- Hero Shot -->
-        <div>
-            <div class="container-parent bild">
-                <div class="container heroshot pt-4">
 
-                    <span>
-                        <img src="images/logo/logo1.svg" width="120" alt="">
-                        <h3>Vom ersten Gedankensplitter <br> bis zur fertigen Lösung</h3>
-                    </span>
-                </div>
+        <div class="heroshot">
+            <img src="https://www.kammgarn-west.ch/wp-content/uploads/2019/04/eingangsbereich_dsc2946-2100x900-c-default.jpg" alt="Kaktus" class="heroshot-image">
+            <div class="container">
+                <img src="images/logo/logo1.svg" width="120" alt="">
+                <h3>Vom ersten Gedankensplitter <br> bis zur fertigen Lösung</h3>
             </div>
         </div>
+
 
         <div class="child-pt-3 child-pb-3">
 
             <!-- Unsere Drei Hauptbereiche -->
-            <div class="container-parent">
+            <div class="">
                 <div class="container">
                     <!-- <h2 class="abbschnitt-titel">Über Uns</h2> -->
                     <div class="grid grid-2 flex-middle ">
@@ -54,7 +52,7 @@
                             </div>
                             <div class="t-center ">
                                 <a href="" class="reset-link">
-                                    <img src="images/Projektmanagement_v2.png" alt="Innovative Webapplikationen" style="width: clamp(200px, 30%, 40%)">
+                                    <img src="images/Projektmanagement_v5.png" alt="Innovative Webapplikationen" style="width: clamp(200px, 45%, 45%)">
                                     <p class="ideenschmiedeklein">Projektmanagement</p>
                                 </a>
                             </div>
@@ -139,14 +137,14 @@
     <?php include('assets/footer.php') ?>
 
     <script>
-        const imageUrls = [
+        /*         const imageUrls = [
             ["images/heroshotbilder/DSC00767.JPG", 'grayscale(50%)'],
             ["images/heroshotbilder/DSC00799.JPG", 'grayscale(50%)'],
             ["images/heroshotbilder/DSC00919.JPG", 'grayscale(50%)'],
             ["images/heroshotbilder/DSC09530.JPG", 'grayscale(50%)'],
             ["images/heroshotbilder/DSC09971.JPG", 'grayscale(50%)'],
             ["images/heroshotbilder/DSC00705.JPG", 'grayscale(50%)'],
-            /* ["images/heroshotbilder/DSC00724.JPG", 'grayscale(50%)'], */
+            
             ["images/heroshotbilder/DSC00762.JPG", 'grayscale(50%)'],
         ]
 
@@ -161,14 +159,12 @@
 
             document.querySelector('.bild')
             .style.backgroundImage = `url(${imageUrls[index][0]})`;
-/*  
-            document.querySelector('.bild')
-            .style.filter = imageUrls[index][1]; */
+
 
             index++
 
             index = index == imageUrls.length ? 0 : index
-        }
+        } */
     </script>
 
     <script>

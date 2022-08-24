@@ -2,25 +2,6 @@
 
 
 
-.bild {
-    transition: background-image 0.6s ease;
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(50%);
-}
-
-
-.heroshot {
-    min-height: 93vh;
-    font-size: 2em ;
-}
-
-.heroshot span {
-    padding: 0.5em;
-    display: inline-block;
-    backdrop-filter: blur(5px);
-}
-
 
 
 .ideenschmiede {
@@ -33,7 +14,6 @@
 }
 
 /* GRID */
-
 .grid {
     display: grid;
 }
@@ -152,12 +132,6 @@
         row-gap: 10px
     }
 
-    .heroshot {
-        font-size: 1.4em;
-        top: 60px;
-        left: 30px;
-    }
-
     .detail {
         flex-direction: column;
         align-items: center;
@@ -190,13 +164,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-
-    .heroshot {
-        font-size: 0.8em;
-        top: 30px;
-        left: 30px;
-        color: var(--white);
-    }
 
     .container {
         padding: 1em

@@ -178,20 +178,6 @@ h3 {
   font-size: xx-large;
 }
 
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background: rgb(238, 238, 238);
-  padding: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgb(189, 189, 189);
-  padding: 1em;
-}
-
 * {
   box-sizing: border-box;
   color: var(--dark-grey-font);
@@ -213,6 +199,25 @@ img {
 
 .u-hover:hover {
   text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(238, 238, 238);
+  padding: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(210, 210, 210);
+  padding: 1em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(100, 100, 100);
+  padding: 1em;
 }
 
 .bg-light-blue {
@@ -1203,41 +1208,37 @@ img {
 }
 
 /* HEADER und NAV */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--white);
-  padding: 0.3em 0em;
+.header {
+  height: 8vh;
   position: sticky;
   top: 0;
-  width: 100%;
-  height: 8vh;
-  z-index: 100;
+  box-shadow: 0 0 5px 5px rgba(71, 71, 71, 0.0862745098);
+  z-index: 99;
 }
-header nav > ul {
-  list-style-type: none;
+.header header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100%;
 }
-header nav > ul li a {
+.header header .large-nav {
+  align-items: center;
+  display: flex;
+  list-style-type: none;
+}
+.header header .large-nav li {
+  margin-left: 1em;
+}
+.header header a {
   text-decoration: none;
-  padding: 0 1em;
-  transition: color 0.2s ease;
 }
-header nav > ul li a * {
-  transition: color 0.2s ease;
+.header header a:hover {
+  text-decoration: underline;
 }
-header nav > ul > li > a:hover *,
-header nav > ul > li > a:hover {
-  color: var(--dark-grey-font);
-  fill: var(--dark-grey-font);
-}
-header nav > ul:hover > li > a,
-header nav > ul:hover > * *,
-header nav > ul:hover > li > a,
-header nav > ul:hover > * {
-  color: var(--grey);
-  fill: var(--grey);
+.header .logo {
+  height: 30px;
 }
 
 .lehre-player {
@@ -1424,6 +1425,43 @@ header nav > ul:hover > * {
 .team-container .team-title {
   margin-bottom: 1.3em;
   margin-top: 0.1em;
+}
+
+.heroshot {
+  height: 92vh;
+  overflow: hidden;
+}
+.heroshot .heroshot-image {
+  min-height: 100%;
+}
+.heroshot .container {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+}
+@media (max-width: 600px) {
+  .heroshot .container {
+    top: 70px;
+    position: unset;
+  }
+}
+@media (min-width: 768px) {
+  .heroshot .container {
+    top: 70px;
+    left: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .heroshot .container {
+    top: 70px;
+    left: 70px;
+  }
+}
+@media (min-width: 1400px) {
+  .heroshot .container {
+    top: 100px;
+    left: 100px;
+  }
 }
 
 .bg-light-blue {

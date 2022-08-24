@@ -11,7 +11,7 @@
     <?php include('assets/header.php') ?>
 
     <main class="padding">
-        <div class="container-parent">
+        <div class="">
             <div class="container">
 
 

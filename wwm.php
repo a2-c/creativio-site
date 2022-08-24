@@ -11,15 +11,15 @@
     <?php include('assets/header.php') ?>
 
     <main>
-        <div class="container-parent">
-            <div class="container-parent">
+        <div class="">
+            <div class="">
                 <div class="container">
                     <div class="">
                         <h1 class="m-0 mt-1 mb-1">Was wir machen zeichnet sich aus durch ...</h1>
                     </div>
                 </div>
             </div>
-            <div class="container-parent">
+            <div class="">
                 <div class="container">
                     <h2 class="mb-2">... unsere Produkte</h2>
                     <div>
@@ -85,7 +85,7 @@
             <br>
             <br>
             <br>
-            <div class="container-parent">
+            <div class="">
                 <div class="container">
                     <h2>... unsere Kunden</h2>
                     <br>
